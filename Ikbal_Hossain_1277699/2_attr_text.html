@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <p title="This is a lorem paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, qui
+        ducimus incidunt doloremque aspernatur deleniti fuga ad molestiae. Vel cupiditate accusamus ut deserunt, facilis
+        delectus sapiente. Non ipsa repudiandae deserunt.</p>
+
+    <h1>content will come</h1>
+
+    <button>Click here</button>
+
+    <!-- Ready Function Shorter Version -->
+    <script>
+        $(function () {
+            var content = $("p").attr("title");
+            // alert(content);
+            $("button").click(function () {
+                $("h1").text(content);
+            })
+        });
+    </script>
+
+
+    <p title="This is a lorem paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio,
+        quiducimus incidunt doloremque aspernatur deleniti fuga ad molestiae. Vel cupiditate accusamus ut deserunt,
+        facilis delectus sapiente. Non ipsa repudiandae deserunt.</p>
+
+    <h1>content will come</h1>
+
+    <button>Click here</button>
+
+    <!-- Ready Function Shorter Version -->
+    <script>
+        $(function () {
+            var content = $("p").text();
+            // alert(content);
+            $("button").click(function () {
+                $("h1").text(content);
+            })
+        });
+    </script>
+
+</body>
+
+</html>
