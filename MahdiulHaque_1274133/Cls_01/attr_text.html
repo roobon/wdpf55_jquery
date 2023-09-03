@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <p class = "para1" title="This is a Lorem Paragraph"><b>Lorem ipsum</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ad eligendi similique fuga quisquam maiores! Natus, quis nobis incidunt, doloremque laboriosam debitis dolorem magni, veritatis aliquam velit tempora quaerat. Deserunt.</p>
+    <p class = "para2"><b>Lorem ipsum</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ad eligendi similique fuga quisquam maiores! Natus, quis nobis incidunt, doloremque laboriosam debitis dolorem magni, veritatis aliquam velit tempora quaerat. Deserunt.</p>
+    <p class = "para3"><b>Lorem ipsum</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ad eligendi similique fuga quisquam maiores! Natus, quis nobis incidunt, doloremque laboriosam debitis dolorem magni, veritatis aliquam velit tempora quaerat. Deserunt.</p>
+   
+    <div class="div1">title content will come</div>
+    <div class="div2">paragraph content will come</div>
+    <div class="div3">paragraph with all tag content will come</div>
+
+    <button id="btn1">Click for Attribute</button>
+    <button id="btn2">Click for text content</button>
+    <button id="btn3">Click for html content</button>
+  
+    <!-- Ready Function SHORTER VERSION -->
+    <script>
+        $(function(){
+            var title = $("p:first").attr("title");
+            var content1 = $(".para2").text("title");
+            var content2 = $(".para3").html("title");
+            // alert(content);
+            $("#btn1").click(function(){
+                $(".div1").text(title);
+            })
+            $("#btn2").click(function(){
+                $(".div2").text(content1);
+            })
+            $("#btn3").click(function(){
+                $(".div3").html(content2);
+            })
+
+            // ONE METHOD
+            // var content = $("p").html();
+            // // alert(content);
+            // $("button").click(function(){
+            //     $("h1").html(content);
+            // })
+            // var content = $("p").html();
+            // // alert(content);
+            // $("button").click(function(){
+            //     $("div.para").html(content);
+            // })
+          
+            //
+            // var content = $("p").text();
+            // // alert(content);
+            // $("button").click(function(){
+            //     $("h1").text(content);
+            // })
+            // var content = $("p").attr("title");
+            // // alert(content);
+            // $("button").click(function(){
+            //     $("h1").text(content);
+            // })
+           
+           
+        })
+
+        // sirer ta dekhte hobe
+    </script>
+</body>
+</html>
