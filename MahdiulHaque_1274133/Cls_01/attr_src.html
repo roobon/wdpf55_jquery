@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<style>
+    img{
+        width: 500px;
+        height: 250px;
+    }
+</style>
+<body>
+  <img id="animal" src="cat-5496162_1280.jpg" alt="">
+    
+   
+    <!-- Ready Function SHORTER VERSION -->
+    <script>
+        $(function(){
+            $("#animal").mouseover(function(){
+                $("#animal").attr("src", "pexels-zoosnow-5838715.jpg");
+            })
+            $("#animal").mouseleave(function(){
+                $("#animal").attr("src", "cat-5496162_1280.jpg");
+            })
+        })
+      
+
+        
+    </script>
+</body>
+</html>
