@@ -9,9 +9,10 @@
 </head>
 
 <body>
-    <p title="This is a lorem paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, qui
-        ducimus incidunt doloremque aspernatur deleniti fuga ad molestiae. Vel cupiditate accusamus ut deserunt, facilis
-        delectus sapiente. Non ipsa repudiandae deserunt.</p>
+
+    <p title="This is a lorem paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio,
+        quiducimus incidunt doloremque aspernatur deleniti fuga ad molestiae. Vel cupiditate accusamus ut deserunt,
+        facilis delectus sapiente. Non ipsa repudiandae deserunt.</p>
 
     <h1>content will come</h1>
 
@@ -20,7 +21,7 @@
     <!-- Ready Function Shorter Version -->
     <script>
         $(function () {
-            var content = $("p").attr("title");
+            var content = $("p").text();
             // alert(content);
             $("button").click(function () {
                 $("h1").text(content);
@@ -31,4 +32,5 @@
 </body>
 
 </html>
+
 
