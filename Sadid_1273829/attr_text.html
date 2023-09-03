@@ -8,20 +8,38 @@
 </head>
 <body>
 
-    <p title="this is a lorem paragraph.">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit fugit veritatis mollitia, soluta esse incidunt pariatur deserunt, iure sapiente aut corporis earum aspernatur eius ab laborum dicta ipsa quisquam accusantium? Aliquam ipsa iste hic atque nam? Harum voluptatibus quis, saepe velit fuga porro accusamus unde sunt officia, dolorum consequatur tempora quae quos, veniam qui esse eum adipisci expedita. Officiis odio vel corporis aliquam accusamus eligendi ab reprehenderit soluta, recusandae, ut sequi repudiandae quas quia nemo. Excepturi eligendi temporibus, nobis distinctio, eaque maxime quidem sunt nesciunt error facere dolor praesentium rerum facilis quas sequi atque, minima quibusdam maiores perferendis dolorem laborum! Nulla, repellendus! Eveniet, corrupti recusandae! Optio, ipsum? Sapiente aspernatur expedita asperiores? Ad accusamus rem dolores laboriosam minus, deleniti delectus corporis!</p>
+    <p class="para1" title="this is a lorem paragraph.">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit fugit veritatis mollitia, soluta esse incidunt pariatur deserunt, iure sapiente aut corporis earum aspernatur eius ab laborum dicta ipsa quisquam accusantium? Aliquam ipsa iste hic atque nam? Harum voluptatibus quis, saepe velit fuga porro accusamus unde sunt officia, dolorum consequatur tempora quae quos, veniam qui esse eum adipisci expedita. Officiis odio vel corporis aliquam accusamus eligendi ab reprehenderit soluta, recusandae, ut sequi repudiandae quas quia nemo. Excepturi eligendi temporibus, nobis distinctio, eaque maxime quidem sunt nesciunt error facere dolor praesentium rerum facilis quas sequi atque, minima quibusdam maiores perferendis dolorem laborum! Nulla, repellendus! Eveniet, corrupti recusandae! Optio, ipsum? Sapiente aspernatur expedita asperiores? Ad accusamus rem dolores laboriosam minus, deleniti delectus corporis!</p>
 
-    <h1>Content will come</h1>    
-    <button id="btn">Display Title</button>
+    <p class="para2" title="this is a lorem paragraph.">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit fugit veritatis mollitia, soluta esse incidunt pariatur deserunt, iure sapiente aut corporis earum aspernatur eius ab laborum dicta ipsa quisquam accusantium? Aliquam ipsa iste hic atque nam? Harum voluptatibus quis, saepe velit fuga porro accusamus unde sunt officia, dolorum consequatur tempora quae quos, veniam qui esse eum adipisci expedita. Officiis odio vel corporis aliquam accusamus eligendi ab reprehenderit soluta, recusandae, ut sequi repudiandae quas quia nemo. Excepturi eligendi temporibus, nobis distinctio, eaque maxime quidem sunt nesciunt error facere dolor praesentium rerum facilis quas sequi atque, minima quibusdam maiores perferendis dolorem laborum! Nulla, repellendus! Eveniet, corrupti recusandae! Optio, ipsum? Sapiente aspernatur expedita asperiores? Ad accusamus rem dolores laboriosam minus, deleniti delectus corporis!</p>
+
+    <p class="para3" title="this is a lorem paragraph.">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit fugit veritatis mollitia, soluta esse incidunt pariatur deserunt, iure sapiente aut corporis earum aspernatur eius ab laborum dicta ipsa quisquam accusantium? Aliquam ipsa iste hic atque nam? Harum voluptatibus quis, saepe velit fuga porro accusamus unde sunt officia, dolorum consequatur tempora quae quos, veniam qui esse eum adipisci expedita. Officiis odio vel corporis aliquam accusamus eligendi ab reprehenderit soluta, recusandae, ut sequi repudiandae quas quia nemo. Excepturi eligendi temporibus, nobis distinctio, eaque maxime quidem sunt nesciunt error facere dolor praesentium rerum facilis quas sequi atque, minima quibusdam maiores perferendis dolorem laborum! Nulla, repellendus! Eveniet, corrupti recusandae! Optio, ipsum? Sapiente aspernatur expedita asperiores? Ad accusamus rem dolores laboriosam minus, deleniti delectus corporis!</p>
+
+    <div class="d1">Content will come</div>
+    <div class="d2">Content will come</div>
+    <div class="d3">Content will come</div>
+
+
+    <button id="btn1">Display Title</button>
+    <button id="btn2">Display text</button>
+    <button id="btn3">Display html</button>
     
     <script>
         $(function(){
-            var content = $("p").attr("title");
-            alert(content);
-            $('h1').text(content);
-
-            var content = $("p").text();
-            alert(content);
-            $('h1').text(content);            
+            var title = $(".para1").attr("title");
+            var content1 = $(".para2").text("title");
+            var content2 = $(".para3").html("title");
+            
+            $("#btn1").click(function(){
+                $(".d1").text("title")
+            })
+            
+            $("#btn2").click(function(){
+                $(".d2").text("content1")
+            })
+            
+            $("#btn3").click(function(){
+                $(".d3").text("content2")
+            })
         })
     </script>
 </body>
