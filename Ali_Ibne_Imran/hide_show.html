@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <h2>All Paragraph</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam porro mollitia totam quo dignissimos quia eum possimus suscipit nobis pariatur ducimus voluptate amet cum illum veritatis qui, unde quod velit.</p>
+    <button id="btn1">Hide</button>
+    <button id="btn2">Show</button>
+    <button id="btn3">Toggle</button>
+    
+
+    <script>
+        $(function(){
+            $("#btn1").click(function(){
+                $("p").hide()
+            })
+            $("#btn2").click(function(){
+                $("p").show()
+            })
+            $("#btn3").click(function(){
+                $("p").toggle()
+            })
+        })
+    </script>
+</body>
+</html>
