@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Hide & Show by jQuery</title>
+</head>
+<body>
+
+    <div class="container">
+        
+        <p title="Hi! I'm New Text" class="para"><i>Lorem ipsum</i> <b>dolor</b> sit amet consectetur, adipisicing elit. Alias debitis aperiam voluptatem sapiente, quaerat dolor? Voluptatibus ad ullam deleniti eum!</p>
+
+        <h5 class="first">Show Here</h5>
+
+        <button class="btn btn-success">Click Here</button>
+
+    </div>
+
+    <script>
+        $(function(){
+            // var content = $("p").attr("title");
+            // //alert(content);
+            // $("button").click(function(){
+            //     $("h5.first").text(content)
+            // })
+
+            // var content = $("p").text();
+            // //alert(content);
+            // $("button").click(function(){
+            //     $("h5.first").text(content)
+            // })
+            
+            
+            var content = $("p").html();
+            //alert(content);
+            $("button").click(function(){
+                $("h5.first").html(content)
+            })
+        });
+    </script>
+</body>
+</html>
