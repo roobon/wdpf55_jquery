@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+    <div>Content will load here</div>
+    <button class="btn">Load</button>
+   <script>
+    $(document).ready(function(){
+        $(".btn").click(function(){
+            $("div").load("my_content.txt").css({"background-color":"blue","color":"white"});
+        })
+    })
+   </script> 
+</body>
+</html>

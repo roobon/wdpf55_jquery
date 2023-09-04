@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Hide & Show by jQuery</title>
+</head>
+<body>
+
+    <div class="container">
+        
+        <p class="para1" title="this is title"><i>Lorem ipsum</i> <b>dolor</b> sit amet consectetur, adipisicing elit. Alias debitis aperiam voluptatem sapiente, quaerat dolor? Voluptatibus ad ullam deleniti eum!</p>
+
+        <p class="para2"><i>Lorem ipsum</i> <b>dolor</b> sit amet consectetur, adipisicing elit. Alias debitis aperiam voluptatem sapiente, quaerat dolor? Voluptatibus ad ullam deleniti eum!</p>
+
+        <p class="para3"><i>Lorem ipsum</i> <b>dolor</b> sit amet consectetur, adipisicing elit. Alias debitis aperiam voluptatem sapiente, quaerat dolor? Voluptatibus ad ullam deleniti eum!</p>
+
+        <div class="div1">title content will show here</div>
+        <div class="div2">Paragraph content will show here</div>
+        <div class="div3">Paragraph with all tag will show here</div>
+
+        <button id="btn1">Click for Attributes</button>
+        <button id="btn2">Click for text content</button>
+        <button id="btn3">Click for Html content</button>
+
+    </div>
+
+    <script>
+        $(function(){
+            var title = $("p:first").attr("title");
+            var content1 = $(".para2").text();
+            var content2 = $(".para3").html();
+            //alert(content);
+            
+            $("#btn1").click(function(){
+                $(".div1").text(title);
+            });
+
+            $("#btn2").click(function(){
+                $(".div2").text(content1);
+            })
+
+            $("#btn3").click(function(){
+                $(".div3").html(content2);
+            })
+
+
+        });
+    </script>
+</body>
+</html>
