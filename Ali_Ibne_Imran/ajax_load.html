@@ -7,17 +7,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
-<!-- Ready function -->
-    <script>
-        $(document).ready(function(){
-
-        }) 
-    </script>
-    
-<!-- Ready function shorter version -->
-    <script>
+    <div>Content will load Here</div>
+    <button class="btn">Load</button>
+     <script>
         $(function(){
-            
+            $(".btn").click(function(){
+                $("div").load("content.txt")
+            })
         })
     </script>
 </body>
