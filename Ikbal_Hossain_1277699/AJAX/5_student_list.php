@@ -1,3 +1,13 @@
+<?php
+
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "wdpf55_php";
+
+$db = new mysqli($host, $user, $password, $database);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,17 +21,6 @@
 </head>
 
 <body>
-    <?php
-
-    $host = "localhost";
-    $user = "root";
-    $password = "";
-    $database = "wdpf55_php";
-
-    $db = new mysqli($host, $user, $password, $database);
-
-    ?>
-
     <?php 
             $sql = ("SELECT * FROM students");
             $result = $db->query($sql);
@@ -64,7 +63,7 @@
                         <option value="2">Khulna </option>
                         <option value="3">Chottogram </option>
                     </select> <br>
-                    <button type="button" id="btn">Submit</button>
+                    <button type="button" name="button" id="btn">Submit</button>
                 </form>
 
                 <div class="show"></div>
@@ -74,7 +73,7 @@
                         $("#btn").click(function(){
                             var data = $("form").serialize();
 
-                         $.post("5.1_student_submit.php", {id:1}, function(data, status){
+                         $.post("5.1_student_submit.php", $("form").serialize(), function(data, status){
                             $(".show").html(data)
                         })
                     })
@@ -85,7 +84,7 @@
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
                 </div>
             </div>
