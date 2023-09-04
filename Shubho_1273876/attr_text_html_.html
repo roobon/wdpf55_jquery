@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <p class="para1" title="Hello Title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis dolor ipsa
+        minima dolorem eum unde, reiciendis, odio illum sunt natus, distinctio rerum at est. Amet doloribus iusto soluta
+        voluptatem commodi.</p>
+
+    <p class="para2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis dolor ipsa minima dolorem eum
+        unde, reiciendis, odio illum sunt natus, distinctio rerum at est. Amet doloribus iusto soluta voluptatem
+        commodi.</p>
+
+    <p class="para3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis dolor ipsa minima dolorem eum
+        unde, reiciendis, odio illum sunt natus, distinctio rerum at est. Amet doloribus iusto soluta voluptatem
+        commodi.</p>
+
+
+    <div class="div1">Title Content will come</div>
+    <div class="div2">Paragraph Content will come</div>
+    <div class="div3">Paragraph will all tag Content will come</div>
+
+    <button class="btn1">Click for Attribute</button>
+    <button class="btn2">Click for text Content</button>
+    <button class="btn3">Click for html content</button>
+
+
+    <script>
+        $(function () {
+            var title = $("p:first").attr("title");
+            var content1 = $(".para2").text();
+            var content2 = $(".para3").html();
+            $(".btn1").click(function () {
+                $(".div1").text(title)
+            })
+            $(".btn2").click(function () {
+                $(".div2").text(content1)
+            })
+            $(".btn3").click(function () {
+                $(".div3").html(content2)
+            })
+        })
+    </script>
+</body>
+
+</html>

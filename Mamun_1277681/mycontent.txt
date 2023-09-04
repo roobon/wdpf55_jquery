@@ -1,0 +1,7 @@
+<h2>Ajax jquery content</h2>
+<p>Lorem ipsum dollar sit amet and lorem ipsum dollar sit amet</p>
+<script>
+p{
+    background-color= "blue";
+}
+</script>

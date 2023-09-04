@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <p class="para-1" title="This is a lorem paragraph">
+      <strong>Lorem ipsum dolor</strong> sit, amet consectetur adipisicing elit. Possimus
+      voluptatum repellendus repellat, incidunt ipsa repudiandae enim, ex velit
+      voluptatibus accusantium, dolor corporis harum eum blanditiis earum
+      temporibus? Quas, enim vel.
+    </p>
+    <p class="para-2">
+      <strong>Lorem ipsum dolor</strong> sit, amet consectetur adipisicing elit. Possimus
+      voluptatum repellendus repellat, incidunt ipsa repudiandae enim, ex velit
+      voluptatibus accusantium, dolor corporis harum eum blanditiis earum
+      temporibus? Quas, enim vel.
+    </p>
+    <p class="para-3" >
+      <strong>Lorem ipsum dolor</strong> sit, amet consectetur adipisicing elit. Possimus
+      voluptatum repellendus repellat, incidunt ipsa repudiandae enim, ex velit
+      voluptatibus accusantium, dolor corporis harum eum blanditiis earum
+      temporibus? Quas, enim vel.
+    </p>
+    <span class="content-1">Title Content will appear here</span> <br>
+    <span class="content-2">ParagraphContent will appear here</span> <br>
+    <span class="content-3">paragraph with all tag will appear here</span> <br>
+    
+    <button class="btn-1">Click For attr</button>
+    <button class="btn-2">Click fro text content</button>
+    <button class="btn-3">Click for html content</button>
+<!-- Rady function shorter version -->
+    <script>
+      $(function () {
+        var title = $("p:first").attr("title");
+        var content1 = $(".para-2").text();
+        var content2 = $(".para-3").html();
+       
+        $("btn-1").click(function(){
+             $(".content-1").text(title);
+        })
+        $("btn-2").click(function(){
+             $(".content-2").text(content1);
+        })
+        $("btn-3").click(function(){
+             $(".content-3").html(content2);
+        })
+       
+      });
+    </script>
+  
+  </body>
+</html>
