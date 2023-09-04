@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <img id="animal" src="1.jpg" alt="" width="350px">
+
+    <script>
+        $(function () {
+            $("#animal").mouseover(function () {
+                $("#animal").attr("src", "2.jpg");
+            })
+            $("#animal").mouseout(function () {
+                $("#animal").attr("src", "1.jpg");
+            })
+
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, officiis vitae repudiandae beatae praesentium
+        expedita debitis, cupiditate asperiores vero, perspiciatis voluptatem ad voluptatum. Autem inventore velit
+        accusantium neque, voluptatem doloremque!</p>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur aperiam voluptatibus
+        commodi iure omnis
+        doloremque, obcaecati quasi quo, sunt illo molestiae. Fugiat pariatur aut doloremque vero vel veniam esse!</p>
+    <div class="para">Content will change</div>
+    <button class="change">Click Me</button>
+
+
+
+    <script>
+        $(function () {
+            var content = $("p").html();
+            $('button.change').click(function () {
+                $("div.para").html(content)
+            })
+        })
+    </script>
+</body>
+
+</html>
