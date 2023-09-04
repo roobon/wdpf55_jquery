@@ -1,7 +1,7 @@
 <?php 
  $db = new mysqli("localhost", "root", "", "php_wdpf55") ;
     extract($_REQUEST);
-        echo "INSERT INTO students VALUE (NULL, '$name', '$gender', '$district')";
+        
         $sql = "INSERT INTO students VALUE (NULL, '$name', '$gender', '$district')";
         $db->query($sql);
 
