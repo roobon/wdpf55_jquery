@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>AJAX</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(231, 169, 169);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="stid" id="stid">
+    <button>Click Here</button>
+    <div></div>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var sid = $("#stid").val();
+                //alert(id);
+
+                $.post("students.php", {id:sid}, function(data, status){
+                    //alert(data);
+                    $("div").html(data);
+                })                
+            })
+        })
+    </script>
+</body>
+</html>
