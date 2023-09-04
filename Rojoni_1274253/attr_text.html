@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+    <p class="para1" title="This is a lorem paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias omnis exercitationem inventore dolor, aliquid tempore molestiae vero minus excepturi, ut cum neque iste beatae. Odio quibusdam modi eveniet ducimus ratione.</p>
+
+    <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias omnis exercitationem inventore dolor, aliquid tempore molestiae vero minus excepturi, ut cum neque iste beatae. Odio quibusdam modi eveniet ducimus ratione.</p>
+
+    <p class="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias omnis exercitationem inventore dolor, aliquid tempore molestiae vero minus excepturi, ut cum neque iste beatae. Odio quibusdam modi eveniet ducimus ratione.</p>
+    
+    <div class="div1"> title content will come</div>
+    <div class="div2">paragraph content will come</div>
+    <div class="div3">paragraph with all tag content will come</div>
+
+
+    <button id="btn1">Click for attribute</button>
+    <button id="btn2">Click for text content</button>
+    <button id="btn3">Click for html content</button>
+
+    <!-- Ready function shorted version -->
+    <script>
+         $(function(){
+                var title = $("p:first").attr("title");
+                var content1 = $(".para2").text();
+                var content2 = $(".para3").html();
+                    $("#btn1").click(function(){
+                        $(".div1").text(title);
+                    })
+                    $("#btn2").click(function(){
+                        $(".div2").text(content1);
+                    })
+                    $("#btn3").click(function(){
+                        $(".div3").html(content2);
+                    })
+                })
+
+
+        // $(function(){
+        //         var content = $("p").html();
+        //              //alert(content);
+        //             $("button").click(function(){
+        //                 $("div.para").html(content);
+        //             })
+        //         })
+
+                // $(function(){
+                // var content = $("p").text();
+                //     //alert(content);
+                //     $("button").click(function(){
+                //         $("h1").text(content);
+                //     })
+                // })
+      
+    </script>
+    
+</body>
+</html>
