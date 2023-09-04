@@ -1,0 +1,1 @@
+<?php echo "this is an output from php file" ?>
