@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <h1>This is heading With H1</h1>
+    <h2>This is heading With H1</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At odio maxime ipsum, maiores non quo voluptates repudiandae repellat quaerat tenetur ea cum magnam quae ex sit voluptatem libero consequatur adipisci.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor tempore aspernatur necessitatibus veritatis. A, dolore ullam, nostrum, unde debitis deserunt magnam earum distinctio nobis sint accusamus ipsam maiores fuga nihil?</p>
+
+    <button class="btn1">Click here</button>
+    <button class="btn2">Click me</button>
+    
+    
+
+    <script>
+        $(function(){
+            $("h1").click(function(){
+                $(this).hide();
+            })
+            $("h2").click(function(){
+                $(this).hide();
+            })
+            $("p").click(function(){
+                $(this).hide();
+            })
+            $(".btn1").click(function(){
+                $(this).hide();
+            })
+            $(".btn2").click(function(){
+                $("p:first").hide();
+            })
+        })
+    </script>
+    
+</body>
+</html>

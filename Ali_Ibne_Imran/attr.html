@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+
+    <p title="This is Paragrph" class="para1">Lorem ipsum, <b>dolor sit amet consectetur adipisicing elit</b>. Non accusamus nihil alias quaerat, harum molestiae suscipit nemo dignissimos quo ex eligendi necessitatibus obcaecati ipsam optio consectetur culpa debitis adipisci. Veniam.</p>
+    <p title="This is Paragrph" class="para2">Lorem ipsum, <b>dolor sit amet consectetur adipisicing elit</b>. Non accusamus nihil alias quaerat, harum molestiae suscipit nemo dignissimos quo ex eligendi necessitatibus obcaecati ipsam optio consectetur culpa debitis adipisci. Veniam.</p>
+    <p title="This is Paragrph" class="para3">Lorem ipsum, <b>dolor sit amet consectetur adipisicing elit</b>. Non accusamus nihil alias quaerat, harum molestiae suscipit nemo dignissimos quo ex eligendi necessitatibus obcaecati ipsam optio consectetur culpa debitis adipisci. Veniam.</p>
+
+    <div id="div1">Content Title</div>
+    <div id="div2">Paragraph Content</div>
+    <div id="div3">Html Content</div>
+    
+
+    <button id="btn1">Attribute</button>
+    <button id="btn2">Text</button>
+    <button id="btn3">Html</button>
+     <!-- Ready Function shorter-->
+     <script>
+        $(function(){
+            var title = $("p:first").attr("title")
+            var title2 = $(".para2").text()
+            var title3 = $(".para3").html()
+            $("#btn1").click(function(){
+                $("#div1").text(title)
+            })
+            
+            $("#btn2").click(function(){
+                $("#div2").text(title2)
+            })
+            
+            $("#btn3").click(function(){
+                $("#div3").html(title3)
+            })
+           
+        })
+    </script>
+</body>
+</html>

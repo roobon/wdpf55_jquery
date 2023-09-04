@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <p class="para1" title="This is a Lorem Paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde officiis incidunt doloremque aliquam, assumenda dolore eos beatae voluptas in temporibus tenetur obcaecati aperiam, animi non est accusantium quia doloribus veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sed cupiditate officia voluptatem delectus vitae obcaecati illum quis aut itaque possimus, fugit asperiores, in repellendus quas pariatur ad totam. Numquam.</p>
+    <p class="para2" title="This is a Lorem Paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde officiis incidunt doloremque aliquam, assumenda dolore eos beatae voluptas in temporibus tenetur obcaecati aperiam, animi non est accusantium quia doloribus veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sed cupiditate officia voluptatem delectus vitae obcaecati illum quis aut itaque possimus, fugit asperiores, in repellendus quas pariatur ad totam. Numquam.</p>
+    <p class="para3" title="This is a Lorem Paragraph"><b>Lorem ipsum</b> dolor sit, amet consectetur adipisicing elit. Unde officiis incidunt doloremque aliquam, assumenda dolore eos beatae voluptas in temporibus tenetur obcaecati aperiam, animi non est accusantium quia doloribus veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sed cupiditate officia voluptatem delectus vitae obcaecati illum quis aut itaque possimus, fugit asperiores, in repellendus quas pariatur ad totam. Numquam.</p><hr>
+
+    <div class="div1">title content will come</div><hr>
+    <div class="div2">paragraph content will come</div><hr>
+    <div class="div3">paragraph with all tag content will come</div><hr>
+
+    <button id="btn1">Click for Attribute</button>
+    <button id="btn2">Click for text content</button>
+    <button id="btn3">Click for html content</button>
+
+    <!-- Ready Function shorter version -->
+        <script>
+            // $(function(){
+            //     var content = $("p").attr("title");
+            //     //alert(content);
+            //     $("button").click(function(){
+            //         $("h1").text(content);
+            //     })
+                
+            // });
+
+            // $(function(){
+            //     var content = $("p").text();
+            //     $("button").click(function(){
+            //         $("h1").text(content);
+            //     })
+            // })
+
+            // $(function(){
+            //     var content = $("p").html();
+            //     $("button").click(function(){
+            //         $("div.para").text(content);
+            //     })
+            // })
+
+            $(function(){
+                var title = $("p:first").attr("title");
+                var content1 = $(".para2").text();
+                var content2 = $(".para3").html();
+                $("#btn1").click(function(){
+                    $(".div1").text(title);
+                })
+                $("#btn2").click(function(){
+                    $(".div2").text(content1);
+                })
+                $("#btn3").click(function(){
+                    $(".div3").html(content2);
+                })
+            })
+        </script>
+</body>
+</html>
