@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body> 
+    <p class="para1" title="This is a Lorem paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque facere aliquam optio ratione laboriosam, accusamus ipsum rem adipisci fugiat sed numquam veniam non dolorem dolore vitae assumenda aliquid, vero, nihil alias modi praesentium quibusdam ut! Harum, deleniti repellat laboriosam enim asperiores consequuntur fugiat suscipit praesentium. Iure ex tempora hic earum?</p>
+    <p class="para2" title="This is a Lorem paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque facere aliquam optio ratione laboriosam, accusamus ipsum rem adipisci fugiat sed numquam veniam non dolorem dolore vitae assumenda aliquid, vero, nihil alias modi praesentium quibusdam ut! Harum, deleniti repellat laboriosam enim asperiores consequuntur fugiat suscipit praesentium. Iure ex tempora hic earum?</p>
+    <p class="para3" title="This is a Lorem paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque facere aliquam optio ratione laboriosam, accusamus ipsum rem adipisci fugiat sed numquam veniam non dolorem dolore vitae assumenda aliquid, vero, nihil alias modi praesentium quibusdam ut! Harum, deleniti repellat laboriosam enim asperiores consequuntur fugiat suscipit praesentium. Iure ex tempora hic earum?</p>
+    <div class="div1"> title content will come</div>
+    <div class="div2"> paragraph content will come</div>
+    <div class="div3">paragraph with all tag content will come</div>
+    <button class="btn1">Click Here</button>
+    <!--  -->
+    <button class="btn1">Click For Attribute</button>
+    <button class="btn2">Click For Text content</button>
+    <button class="btn3">Click For html content</button>
+    <script>
+       
+        // ready function shorter varsion//
+        $(function(){
+            var title= $("p:first").attr("title");
+            var content1 = $(".para2").text();
+            var content2 = $(".para3").text();
+            // alert(content);
+            $("#btn1").click(function(){
+                $(".div1").text(title);
+                $("btn2").click(function(){
+                    $(".div2").text(content1);
+                })
+            })
+            $("btn2").click(function(){
+                    $(".div2").text(content1);
+                })
+                $("btn3").click(function(){
+                    $(".div3").html(content2);
+                })
+        
+            // $("h1").text(content);
+        })
+        
+    </script>
+</body>
+</html>
