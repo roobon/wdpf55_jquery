@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Ajax Load</title>
 </head>
 <body>
-    <!-- Ready Function -->
-    <script>
-        $(document).ready(function(){
-            
-        }) 
-    </script>
-     <!-- Ready Function shorter-->
-     <script>
-        $(function(){
+    <div>Content Will Load Here</div>
+    <button class="btn">Load</button>
 
+    <script>
+        $(function(){
+            $(".btn").click(function(){
+                $("div").load("test.txt");
+            })
         })
     </script>
 </body>

@@ -7,17 +7,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
-    <!-- Ready Function -->
-    <script>
-        $(document).ready(function(){
-            
-        }) 
-    </script>
-     <!-- Ready Function shorter-->
-     <script>
-        $(function(){
-
-        })
-    </script>
+   <img id="animal" src="image/cat.jpg" alt=""> 
+   <script>
+    $(function(){
+    
+        $("#animal").mouseover(function(){
+  $("#animal").attr("src","image/cat2.jpg");
+})
+$("#animal").mouseleave(function(){
+  $("#animal").attr("src","image/tiger.jpg");
+})
+    })
+   </script>
 </body>
 </html>

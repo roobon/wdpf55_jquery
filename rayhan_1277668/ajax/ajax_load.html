@@ -7,16 +7,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
-    <!-- Ready Function -->
-    <script>
-        $(document).ready(function(){
-            
-        }) 
-    </script>
-     <!-- Ready Function shorter-->
-     <script>
-        $(function(){
+    <div>  Content will load here  </div>
+    <button class="btn"> Load </button>
 
+    <script>
+        $(function() {
+            $(".btn").click(function(){
+                $("div").load("myContent.txt").css({ "background-color":"yellow", "color":"red", "padding": "10px"  } );
+
+            })
         })
     </script>
 </body>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("div").text($("form").serialize());
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <form action="">
+        First name: <input type="text" name="FirstName" value="Mickey"><br>
+        Last name: <input type="text" name="LastName" value="Mouse"><br>
+        <select name="Service" id="">
+            <option value="">Select</option>
+            <option value="Service">Service1</option>
+            <option value="Service">Service2</option>
+            <option value="Service">Service3</option>
+        </select>
+        <textarea name="message" id="" cols="30" rows="10"></textarea>
+    </form>
+
+    <button>Serialize form values</button>
+
+    <div></div>
+
+</body>
+
+</html>
