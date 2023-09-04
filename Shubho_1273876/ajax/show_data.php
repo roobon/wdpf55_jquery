@@ -67,71 +67,42 @@ if ($db->connect_error) {
     $db->close();
     ?>
 
+
+
+
+
+
+
+
+
+    <h3>Student Entry</h3>
+    <form action="student_submit.php" method="post">
+        <input type="text" name="name" id="" placeholder="Name"><br>
+        <select name="city" id="">
+            <option value="">select</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Barishal">Barishal</option>
+            <option value="Khulna">Khulna</option>
+        </select><br>
+        <input type="text" name="age" id="" placeholder="Age"><br>
+        <button type="button" value="Submit" id="btn">Submit</button>
+    </form>
+
+    <div class="show"></div>
+
+    <script>
+        $(function() {
+            $("#btn").click(function() {
+                var data = $("form").serialize();
+
+                // Use $.post to send data to student_submit.php
+                $.post("student_submit.php", data, function(response) {
+                    // Display the response in the .show div
+                    $(".show").html(response);
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-<h3>Student Entry</h3>
-<form action="student_submit.php" method="post">
-    <input type="text" name="name" id="" placeholder="Name"><br>
-    <select name="city" id="">
-        <option value="">select</option>
-        <option value="Dhaka">Dhaka</option>
-        <option value="Barishal">Barishal</option>
-        <option value="Khulna">Khulna</option>
-    </select><br>
-    <input type="text" name="age" id="" placeholder="Age"><br>
-    <button type="button" value="Submit" id="btn">Submit</button>
-</form>
-
-<div class="show"></div>
-
-<script>
-    $(function() {
-        $("#btn").click(function() {
-            var data = $("form").serialize();
-
-            // Use $.post to send data to student_submit.php
-            $.post("student_submit.php", data, function(response) {
-                // Display the response in the .show div
-                $(".show").html(response);
-            });
-        });
-    });
-</script>
-<script>
-    // Function to update the student list
-    function updateStudentList() {
-        $.ajax({
-            type: "GET",
-            url: "student_list.php", // Replace with the URL to fetch the updated student list
-            success: function (data) {
-                $("#student-list").html(data);
-            },
-        });
-    }
-
-    $(function() {
-        $("#btn").click(function() {
-            var data = $("#student-form").serialize();
-
-            // Use $.post to send data to student_submit.php
-            $.post("student_submit.php", data, function(response) {
-                // Display the response in the .show div
-                $(".show").html(response);
-
-                // Update the student list after successful submission
-                updateStudentList();
-            });
-        });
-
-        // Initial call to populate the student list on page load
-        updateStudentList();
-    });
-</script>
