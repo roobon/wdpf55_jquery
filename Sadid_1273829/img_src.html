@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>jQuery Setup</title>
+</head>
+<body>
+    <img height="400" width="500" src="./img/Cat1.jpg" alt="cat">
+
+    <script>
+        $(function(){
+            $("img").mouseover(function(){
+                $("img").attr("src", "./img/t1.jpg");
+            })
+            $("img").mouseleave(function(){
+                $("img").attr("src", "./img/Cat1.jpg");
+            })
+        })
+    </script>
+</body>
+</html>
