@@ -6,17 +6,25 @@
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
+<style>
+    div{
+        height: 100px;
+        width: 100px;
+        display: none;
+    }
+</style>
 <body>
-    <!-- Ready Function -->
-    <script>
-        $(document).ready(function(){
-            
-        }) 
-    </script>
+    <button>Click</button>
+
      <!-- Ready Function shorter-->
      <script>
         $(function(){
-
+            $("button").click(function(){
+                $.get("welcome.php",function(data,status){
+                  $("div").html(data)
+                  $("div").css("display","block")
+                })
+            })
         })
     </script>
 </body>
