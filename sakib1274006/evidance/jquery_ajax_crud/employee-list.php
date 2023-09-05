@@ -1,8 +1,7 @@
 <?php
 include ("db_config.php" ); 
 $sql= "SELECT *  FROM `employees`" ; 
-//$result = mysqli_query($conn ,  $sql);
-$result = $conn->query($sql);
+$result = mysqli_query($conn ,  $sql); 
 $data = [];
 while ($fetch=mysqli_fetch_assoc($result)){
     $data[] = $fetch;

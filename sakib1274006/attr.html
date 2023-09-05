@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <h1>content will come here</h1>
+
+    <p class="para1" title="This is a loren paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam a rem nihil inventore velit sunt, cupiditate sed sequi assumenda et dolores doloribus repellat aliquid odio cumque quia officiis hic magni.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam a rem nihil inventore velit sunt, cupiditate sed sequi assumenda et dolores doloribus repellat aliquid odio cumque quia officiis hic magni.</p>
+
+    <p class="para2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam a rem nihil inventore velit sunt, cupiditate sed sequi assumenda et dolores doloribus repellat aliquid odio cumque quia officiis hic magni.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam a rem nihil inventore velit sunt, cupiditate sed sequi assumenda et dolores doloribus repellat aliquid odio cumque quia officiis hic magni.</p>
+    <p class="para3"><b>Lorem ipsum dolor sit</b>, amet consectetur adipisicing elit. Numquam a rem nihil inventore velit sunt, cupiditate sed sequi assumenda et dolores doloribus repellat aliquid odio cumque quia officiis hic magni.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam a rem nihil inventore velit sunt, cupiditate sed sequi assumenda et dolores doloribus repellat aliquid odio cumque quia officiis hic magni.</p>
+
+    <div class="div1">title content</div>
+    <div class="div2">paragraph content</div>
+    <div class="div3">html content</div>
+
+    <button id="btn1">Click Here</button>
+    <button id="btn2">Click for text cintent</button>
+    <button id="btn3">Click for html cintent</button>
+
+ 
+
+    <script>
+        $(function(){
+            var title = $("p:first").attr("title");
+            var content2 = $(".para2").text();
+            var content3 = $(".para3").html();
+            $("#btn1").click(function(){
+                $(".div1").text(title);
+            })
+            $("#btn2").click(function(){
+                $(".div2").text(content2);
+            })
+            $("#btn3").click(function(){
+                $(".div3").text(content3);
+            })
+            
+        })
+
+    </script>
+</body>
+</html>
