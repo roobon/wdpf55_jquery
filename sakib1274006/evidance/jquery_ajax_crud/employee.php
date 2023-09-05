@@ -253,8 +253,8 @@
                             <th>Id</th>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Phone</th>
                             <th>Address</th>
+                            <th>Phone</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
