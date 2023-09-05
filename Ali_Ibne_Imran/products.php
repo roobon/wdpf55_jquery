@@ -1,4 +1,4 @@
-<?php  $db= new mysqli("localhost","root","","data");?>
+<?php  $db= new mysqli("localhost","root","","exam");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
   
     <div class="container">
       
-        <h1>Product List</h1>
+        <h1>Student List</h1>
         <?php 
-            $sql = "SELECT * FROM product";
+            $sql = "SELECT * FROM students";
             $result = $db->query($sql);
         ?>
             
@@ -25,8 +25,9 @@
                 <thead>
                     <tr>
                         <th>SN</th>
-                        <th>Product Name</th>
-                        <th>Price</th>
+                        <th>Student Name</th>
+                        <th>Bith Day</th>
+                        <th>Email</th>
                         
                        
                     </tr>
@@ -40,8 +41,9 @@
     
                     <tr>
                         <td><?php echo $no?></td>
-                        <td><?php echo $row["product_name"] ?></td>
-                        <td><?php echo $row["price"]?></td>
+                        <td><?php echo $row["Name"] ?></td>
+                        <td><?php echo $row["DOB"]?></td>
+                        <td><?php echo $row["Email"]?></td>
                         
                           
                     </td>
@@ -57,16 +59,20 @@
 
             <br><br>
            
-        <form action="" method="">
+        <form action="">
             <div class="form-group mb-3 mt-3">
-                <label>Product Name :</label>
+                <label>Student Name :</label>
                 <input type="text" class="form-control" name="name">
             </div>
             <div class="form-group mb-3 mt-3">
-                <label>Price :</label>
-                <input type="text" class="form-control" name="price">
+                <label>Dob :</label>
+                <input type="date" class="form-control" name="dob">
             </div>
-           
+            <div class="form-group mb-3 mt-3">
+                <label>Email :</label>
+                <input type="email" class="form-control" name="email">
+            </div>
+           <!-- <input type="button" id="btn" value="Entry" class="btn btn-success"> -->
             <button type="button" class="btn btn-success" name="entry" id="btn">Entry</button>
         </form>
         <div class="show"></div>

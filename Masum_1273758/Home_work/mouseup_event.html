@@ -7,16 +7,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
-    <!-- Ready Function -->
+    <p id="p1">This is a important paragraph</p>
+    <button class="btn">Click Here</button>
     <script>
-        $(doucment).ready(function(){
-            
-        }) 
-    </script>
-    <!-- Ready Function SHORTER VERSION -->
-    <script>
-        $(function(){
-            
+        $(document).ready(function(){
+        $("#p1").mouseup(function(){
+         alert("Mouse up over p1")
+        })
         })
     </script>
 </body>
