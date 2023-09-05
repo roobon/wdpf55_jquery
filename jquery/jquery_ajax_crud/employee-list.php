@@ -1,5 +1,5 @@
 <?php
-include ("connection.php" ); 
+include ("db_config.php" ); 
 $sql= "SELECT *  FROM `employees`" ; 
 $result = mysqli_query($conn ,  $sql); 
 $data = [];
