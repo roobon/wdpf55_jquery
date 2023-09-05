@@ -1,5 +1,5 @@
 <?php
-include ("db_config.php" ); 
+include ("db_config.php"); 
 $id= $_GET['id' ];
 $sql= "SELECT *  FROM `employees`  WHERE  `id` =   $id";
 $result= mysqli_query($conn ,  $sql);
