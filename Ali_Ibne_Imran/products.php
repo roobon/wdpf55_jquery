@@ -75,7 +75,7 @@
                 $("#btn").click(function(){
                     $.post("submit.php",$("form").serialize(),function(data,status){
                         $(".show").html(data)
-                        //location.reload(true)
+                        location.reload(true)
                     })
                 })
             })
