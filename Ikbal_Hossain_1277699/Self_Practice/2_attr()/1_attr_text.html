@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <p title="This is the title of paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quae aliquam dolore, quo, illum provident autem perferendis, atque necessitatibus ipsam cumque perspiciatis sequi? Quaerat tempora similique odio, harum est molestiae?</p>
+
+    <h1>Content will come</h1>
+
+    <button>Click here</button>
+    <script>
+        $(document).ready(function(){
+            var content = $("p").attr("title");
+
+            $("button").click(function(){
+                $("h1").text(content);
+            });
+        });
+    </script>
+</body>
+
+</html>
