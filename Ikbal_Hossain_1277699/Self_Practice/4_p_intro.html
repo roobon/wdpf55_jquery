@@ -7,17 +7,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
-    <!-- Ready Function -->
-    <script>
-        $(doucment).ready(function(){
-            
-        }) 
-    </script>
-    <!-- Ready Function SHORTER VERSION -->
+    <h2 class="intro">This is a heading </h2>
+    <p class="intro">This is a paragraph</p>
+    <p>This is another paragraph</p>
+
+    <button>Click me</button>
     <script>
         $(function(){
-            
-        })
+            $("button").click(function(){
+                $("p.intro").hide();
+            });
+        });
     </script>
 </body>
 </html>
