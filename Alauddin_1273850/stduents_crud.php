@@ -12,7 +12,7 @@
 <body>
     
     <div class="container">
-        <h3>Student List</h3>
+        <h3>Student List</h3><br>
     <?php  
         $sql = "SELECT * FROM  students";
         $result = $db->query($sql);
@@ -39,19 +39,27 @@
                     <td><?php echo $row['district'] ?></td>
                     <td>
                         <a class="btn btn-info" href="edit.php?id=<?php ?>"><span class="glyphicon glyphicon-edit"> Edit</span></a>
-                        <a class="btn btn-danger" href="edit.php?id=<?php ?>"><span class="glyphicon glyphicon-trash"> Delete</span></a>
+                        <a class="btn btn-danger" href="delete.php?id=<?php ?>"><span class="glyphicon glyphicon-trash"> Delete</span></a>
                 </td>
                 </tr>
                 <?php endwhile; ?>
             </tbody>
-        </table>
+        </table><br>
 
-        <h3>New Student</h3>
-        <form action="" method="">
-            <input type="text" name="name" placeholder="Enter Name"><br>
-            Gender <br>
-            Male:<input type="radio" name="gender" value="male">
-            Female:<input type="radio" name="gender" value="female"><br>
+        <h3>New Student</h3><br>
+        <form action="" class="row g-3" method="">
+            <div class="col-12">
+                <label for="" class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" placeholder="Enter Name">
+            </div>
+            <div class="col-12">
+                <label for=""  class="form-label">Gender</label><br>
+                <label for=""  class="form-label">Male:</label>
+                <input type="radio" name="gender"" value="male">
+                <label for=""  class="form-label">Female</label>
+                <input type="radio" name="gender" value="female">
+            </div>
+            <div class="col-12">
             <select name="district" id="">
                 <option value="">Select One</option>
                 <option value="Dhaka">Dhaka</option>
@@ -61,8 +69,10 @@
                 <option value="Barishal">Barishal</option>
                 <option value="Chandpur">Chandpur</option>
                 <option value="Sylet">Sylet</option>
-            </select><br>
-            <button type="button" id="btn">Submit</button>
+                <option value="Tangail">Tangail</option>
+            </select>
+            </div>
+            <button type="button" class="btn btn-primary" id="btn">Submit</button>
         </form>
         <div class="show"></div>
     </div>
@@ -72,6 +82,7 @@
                 
                 $.post("student_submit.php",$("form").serialize(), function(data, status){
                     $(".show").html(data);
+                    location.reload();
                 })
             })
         })
