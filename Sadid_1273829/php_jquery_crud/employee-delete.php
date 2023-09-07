@@ -1,5 +1,5 @@
 <?php
-include ("connection.php" ); 
+include ("config.php" ); 
 $id =$_GET['id' ];  
 $sql= "DELETE FROM  `employees` WHERE `id`  =  $id " ; 
 
