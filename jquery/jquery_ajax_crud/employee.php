@@ -489,7 +489,7 @@
             })
         }
 
-        function viewEmployee(id = 2) {
+        function viewEmployee(id) {
             $.ajax({
                 type: 'get',
                 data: {
