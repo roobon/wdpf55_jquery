@@ -1,0 +1,5 @@
+  $.post( "login.php", {e:email, p:pass}  , function(data , status) {
+                    $(".message").html(data)
+                });
+
+== url , data , callback
