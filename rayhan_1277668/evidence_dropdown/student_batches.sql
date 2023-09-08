@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 07, 2023 at 01:58 PM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 7.4.33
+-- Generation Time: Sep 08, 2023 at 03:59 AM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 7.4.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `batch_info` (
   `id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `batch_info`
@@ -63,7 +63,7 @@ CREATE TABLE `students` (
   `Batch` smallint(6) NOT NULL,
   `Address` varchar(50) NOT NULL,
   `Hobbies` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `students`
@@ -81,6 +81,28 @@ INSERT INTO `students` (`ID`, `Name`, `Gender`, `DOB`, `Email`, `Batch`, `Addres
 (19, 'Rajia sultana', 'Female', '2023-08-03', 'hosnemasum@gmail.com', 5, 'asdasdasd', 'coding'),
 (20, 'Jinia Shefa', 'Female', '2023-08-03', 'hosnemasum@gmail.com', 6, 'asdasdasd', 'coding'),
 (21, 'Roamna', 'Female', '2023-08-03', 'hosnemasum@gmail.com', 6, 'asdasdasd', 'coding');
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `student_batches`
+-- (See below for the actual view)
+--
+CREATE TABLE `student_batches` (
+`id` int(11)
+,`Subject` varchar(50)
+,`student_name` varchar(30)
+,`Batch` smallint(6)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `student_batches`
+--
+DROP TABLE IF EXISTS `student_batches`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `student_batches`  AS SELECT `batch_info`.`id` AS `id`, `batch_info`.`name` AS `Subject`, `students`.`Name` AS `student_name`, `students`.`Batch` AS `Batch` FROM (`batch_info` join `students`) WHERE `students`.`Batch` = `batch_info`.`id``id`  ;
 
 --
 -- Indexes for dumped tables
