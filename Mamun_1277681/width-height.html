@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+div{
+    width: 70px;
+    height: 100px;
+    float: left;
+    background-color: tomato;
+    cursor: pointer;
+    margin: 5px;
+}
+
+    </style>
+</head>
+<body>
+   
+    
+    <div class="">d</div>
+    <div class="">d</div>
+    <div class="">d</div>
+    <div class="">d</div>
+    <div class="">d</div>
+    <div class="">d</div>
+    <div class="">d</div>
+    <script>
+        $(function () {
+            // $("li").filter(".bottom").addClass("highlight");
+            // $("p").find("span").addClass("highlight");
+            $("div:first").height("100px").width("100px");
+            $("div:first").css({"background-color":"blue", "cursor":"pointer", "margin":"5px", "floar":"left"})
+        });
+    </script>
+</body>
+</html>

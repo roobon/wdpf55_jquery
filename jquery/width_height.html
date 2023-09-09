@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+       div{ width:70px; height:50px; float:left; margin:5px;
+        background:red; cursor:pointer; }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div>d</div>
+    <div>d</div>
+    <div>d</div>
+    <div>d</div>
+    <script>
+        $(function(){
+           $("div:first").height("100px").width("100px");
+           $("div:first").css({"background-color":"green", "cursor":"help"})         
+        })
+    </script>
+</body>
+</html>

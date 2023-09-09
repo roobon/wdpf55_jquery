@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+       div{
+        border: 1px solid red;
+       }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam doloremque nihil nam deleniti, quas, veritatis iure officiis quo architecto fugit suscipit quos omnis sequi magnam aliquid ipsam dolor molestias quasi!
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam doloremque nihil nam deleniti, quas, veritatis iure officiis quo architecto fugit suscipit quos omnis sequi magnam aliquid ipsam dolor molestias quasi!
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam doloremque nihil nam deleniti, quas, veritatis iure officiis quo architecto fugit suscipit quos omnis sequi magnam aliquid ipsam dolor molestias quasi!
+    </div>
+    
+
+    <script>
+        $(function(){
+         $("div").hover(function(){
+            $(this).remove();
+         })
+        })
+    </script>
+    
+</body>
+</html>

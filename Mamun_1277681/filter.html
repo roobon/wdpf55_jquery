@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+.highlight{
+    font-size: 30px;
+    color: tomato;
+}
+
+    </style>
+</head>
+<body>
+   <ul>
+    <li class="top">item top</li>
+    <li class="top">item top</li>
+    <li class="middle">item middle</li>
+    <li class="middle">item middle</li>
+    <li class="bottom">item bottom</li>
+    <li class="bottom">item bottom</li>
+   </ul>
+   <button class="btn-1">Button-1</button>
+   <button class="btn-2">Button-2</button>
+   <button class="btn-3">Button-3</button>
+   <button class="btn-4">Button-4</button>
+    <script>
+        $(function () {
+            $("li").filter(".bottom").addClass("highlight");
+            $("button").filter(".btn-1").html("New_Level");
+        });
+    </script>
+</body>
+</html>

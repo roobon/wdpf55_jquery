@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            width: 500px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maxime optio eaque necessitatibus.
+    </div>
+    <div>
+        2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maxime optio eaque necessitatibus.
+    </div>
+    <div>
+        3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maxime optio eaque necessitatibus.
+    </div>
+    <div>
+        4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maxime optio eaque necessitatibus.
+    </div>
+
+    <script>
+        $(function(){
+            $("div").click(function(){
+                $(this).empty()
+                //$(this).remove()
+            })
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        div{
+            height: auto;
+            width: 100px;
+            background-color: aqua;
+            margin: 10px;
+            border: 1px solid grey;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+       This is DIV
+    </div>
+    
+    
+
+    
+    
+        <script>
+            $(function(){
+                // $("div").click(function(){
+                //     $(this).before("<div>Some content will be added</div>");
+                // });
+                // $("div").click(function(){
+                //     $(this).after("<div>Some content will be added</div>");
+                // });
+                // $("div").click(function(){
+                //     $(this).append("<p>Some content will be added</p>");
+                // });
+                $("div").click(function(){
+                    $(this).prepend("<p>Some content will be added</p>");
+                });
+            });
+            
+        </script>
+</body>
+</html>
