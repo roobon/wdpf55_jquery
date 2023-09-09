@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        .highlight{
+            font-size: 20px;
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="article">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam impedit dolorum blanditiis suscipit doloribus delectus eligendi quia cumque? Necessitatibus, sit.</p>
+
+        <p>Lorem ipsum dolor sit <span>amet consectetur adipisicing elit.</span> Fugit quod itaque modi minima quaerat labore molestiae vel tempore! Eaque, repellendus.</p>
+
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, dolore?</span>
+    </div>
+
+    <script>
+        $(function(){
+            $("p").find("span").addClass("highlight")
+        });
+    </script>
+</body>
+</html>
