@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <p title="This is a lorem paragraph">Lorem ipsum dolor, <b>This is Ikbal Hossain </b>sit amet consectetur adipisicing elit. Rem unde rerum ex laboriosam, autem incidunt facilis ratione? <i>My dream to be a developer</i>Aliquid libero excepturi nesciunt deleniti. Aperiam possimus dicta optio enim. Quisquam, corrupti architecto.</p>
+
+    <div class="para">
+        Content will display here
+    </div>
+    <br>
+    <div>
+        You can display here also
+    </div>
+
+    <button class="btn">Hit me</button>
+
+    <script>
+        $(document).ready(function(){
+            var content = $("p").html();
+            $(".btn").click(function(){
+                $(".para").html(content)
+            });
+        });
+    </script>
+    
+</body>
+</html>
