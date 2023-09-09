@@ -29,7 +29,7 @@
     <script>
         $(document).ready(function(){
             $(".btn1").click(function () {
-                $("#box").load("about.html")
+                $("#box").load("about.php")
             })
             $(".btn2").click(function () {
                 $("#box").load("home.php")
