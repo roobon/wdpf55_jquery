@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>Studnets</title>
+
     <style>
         body {
             background-color: lightyellow;
             text-align: center;
+            display: flex;
+            gap: 50px;
         }
-        table{
+
+        table {
             text-align: center;
             width: 600px;
             height: 500px;
@@ -23,46 +29,89 @@
         td {
             padding: 5px;
         }
+
+        p {
+            background-color: lightgreen;
+            color: whitesmoke;
+            padding: 10px;
+            border-radius: 10px;
+        }
     </style>
 </head>
+
 <body>
-    
-<table border="2"> 
 
-<?php 
-$db = new mysqli("localhost", "root", "", "template" ) ;
+    <div>
+        <table border="2">
 
-$sql = "SELECT * FROM students";
-$result = $db->query($sql);
-?>
+            <?php
+            $db = new mysqli("localhost", "root", "", "template");
 
-<tr>
-    <td>name</td>
-    <td>Email</td>
-    <td>Phone</td>
-    <td>Action</td>
+            $sql = "SELECT * FROM newstudents";
+            $result = $db->query($sql);
+            ?>
 
-</tr>
+            <tr>
+                <th>name</th>
+                <th>gender</th>
+                <th>district</th>
+                <th>Action</th>
 
-<tr>
+            </tr>
 
-<?php 
-while( $data =  $result->fetch_assoc()) :
+            <tr>
 
-
-?>
-    <td> <?php echo $data['name'] ?> </td>
-    <td> <?php  echo $data['email'] ?> </td>
-    <td> <?php  echo $data['phone'] ?> </td>
-    <td>  </td>
+                <?php
+                while ($data =  $result->fetch_assoc()) :
 
 
-</tr>
+                ?>
+                    <td> <?php echo $data['name'] ?> </td>
+                    <td> <?php echo $data['gender'] ?> </td>
+                    <td> <?php echo $data['district'] ?> </td>
+                    <td> </td>
+            </tr>
+        <?php endwhile; ?>
+        </table>
+    </div>
 
-<?php endwhile ; ?>
 
+    <div>
+        <h3> New Students </h3>
+        <form action="" method="post">
+            <input type="text" name="name" placeholder="Enter Name"> <br>
+            Gender: <br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
 
-</table>
+            <br>
+            District :
+
+            <select name="district">
+                <option value=""> select one </option>
+                <option> Khulna </option>
+                <option> Rajshahi </option>
+                <option> Chottogram </option>
+                <option> Dhaka </option>
+            </select> <br>
+
+            <button type="button" id="btn"> submit </button>
+        </form>
+
+        <div class="show"></div>
+
+    </div>
+    <script>
+        $(function() {
+            $("#btn").click(function() {
+                $.post("students_submit.php", $("form").serialize(), function(data, status) {
+                    // $(".show").html(data)
+                    location.reload();
+                })
+            })
+        });
+    </script>
 
 </body>
+
 </html>
