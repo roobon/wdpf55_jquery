@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav{
+            height: 10vh;
+            width: 100vw;
+            background-color: aqua;
+        }
+        .nav ul{
+            display: flex;
+        }
+        .nav ul li{
+            margin: 20px;
+            list-style-type: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        #section{
+            padding: 10px;
+        }
+        footer{
+            text-align: center;
+            background-color: aqua;
+            padding: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li class="li">Home</li>
+            <li class="li1">About</li>
+            <li class="li2">Contact</li>
+        </ul>
+    </div>
+    <div id="section">
+        <h1>Home page Heading</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur magnam vitae molestiae minima nobis temporibus hic eligendi velit placeat, libero fuga voluptas illo soluta in delectus impedit et neque! Officiis id deleniti quo perspiciatis veniam possimus, debitis itaque maiores dolorem, assumenda illum. Neque quod odio ad at voluptas molestiae aliquam! Voluptate voluptatem, officiis nisi soluta deleniti saepe? Nemo quis quaerat maxime minus incidunt perferendis culpa eos distinctio reiciendis vero quia illo doloribus, temporibus velit! Asperiores quidem voluptate deserunt doloremque eum iste natus beatae aliquam reiciendis architecto illo, delectus voluptas fugiat non numquam sit, quibusdam, nihil est ullam? Cum, impedit tempore? Alias quia, minus perferendis adipisci sequi provident facere optio magnam odit voluptas consequuntur quis architecto voluptates amet. Eaque, quibusdam iste nisi nesciunt ad quos laudantium, distinctio voluptate ullam harum dolorum exercitationem eveniet alias, obcaecati omnis ex magnam sunt a illo soluta voluptatem blanditiis explicabo? In illum porro, corrupti quas aliquam, iure ullam cum ab nostrum voluptas fuga blanditiis dolore saepe quam ipsum praesentium, recusandae quos suscipit inventore itaque vel veritatis illo. Doloremque quis, at mollitia, inventore in similique facere voluptate totam, maxime dignissimos obcaecati eos soluta ad hic excepturi veniam provident non pariatur deserunt suscipit error. Error ab atque recusandae quis! Et quae similique unde accusantium obcaecati earum iste, voluptatibus quaerat deserunt dolorem esse reiciendis, accusamus doloremque sint reprehenderit. Itaque alias qui dolorum accusantium in veniam reprehenderit quibusdam possimus, esse odio eaque eveniet? Voluptates veniam libero quia. Nobis earum neque quasi iure, nemo debitis, sapiente illum omnis iusto, ipsam alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium distinctio ea mollitia exercitationem repellendus tenetur molestias cumque laboriosam soluta consequuntur, quae tempore odit dolorem. Laborum sint, suscipit laboriosam dolores pariatur exercitationem aut unde officia dicta nihil enim mollitia dignissimos nemo id, magnam, ipsa ipsam quo distinctio incidunt excepturi molestias? Fugit nesciunt nobis assumenda inventore vero, culpa nihil nemo dolor aut saepe recusandae voluptas ad fugiat magnam cupiditate corporis adipisci omnis neque ex consectetur consequatur nisi dolorem molestiae ipsa. Ad odit consequatur quaerat necessitatibus aut tempora, enim impedit accusantium magni totam eius magnam iste voluptate neque nam placeat cupiditate sed exercitationem, aliquam omnis modi. Earum incidunt atque, explicabo unde voluptates sint! Temporibus, saepe? Corrupti consequuntur, dicta iusto ea magni alias veritatis!</p>
+    </div>
+    <footer>
+        this is a footer.
+    </footer>
+
+    <script>
+        $(function () {
+            $(".li").click(function(){
+                $("#section").load("home.html")
+            })
+
+            $(".li1").click(function(){
+                $("#section").load("about.html")
+            })
+
+            $(".li2").click(function(){
+                $("#section").load("contact.html")
+            })
+        });
+    </script>
+</body>
+</html>
