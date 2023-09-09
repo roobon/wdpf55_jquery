@@ -26,7 +26,7 @@ $db = new mysqli($server_name, $user_name, $password, $database_name);
             $result = $db->query("SELECT * FROM batch_info");
             while ($row = $result->fetch_object()) :
             ?>
-                <option value="<?php echo $row->batch_id ?>"> <?php echo $row->batch_name ?></option>
+                <option value="<?php echo $row->batch_id ?>"> "<?php echo $row->batch_name?>" </option>
             <?php endwhile ?>
         </select>
     </form>
