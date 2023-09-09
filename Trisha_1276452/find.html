@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <h2>Elements by index</h2>
+
+    <ul>
+        <li>Bangladesh</li>
+        <li>Srilanka</li>
+        <li>Canada</li>
+    </ul>
+
+    <ul>
+        <li>Mango</li>
+        <li>Banana</li>
+    </ul>
+
+    <p>This is paragraph and <span>THIS IS RED</span></p>
+    <p>This is paragraph and <span>THIS IS ALSO RED</span></p>
+
+    <span>Some content in span tag</span>
+    
+
+    <script>
+       $(function(){
+        $("p").find("span").addClass("highlight");
+       })
+    </script>
+</body>
+</html>
