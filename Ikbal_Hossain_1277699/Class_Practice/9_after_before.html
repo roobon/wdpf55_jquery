@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <style>
+        div {
+            height: 1000px;
+            width: 100px;
+            background: aqua;
+            margin: 10px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        This is a DIV
+    </div>
+    
+    <script>
+        $(function () {
+            $("div").click(function () {
+                // $(this).before("<div> Some content will be added </div>");
+                // $(this).after("<div> Some content will be added </div>");
+                // $(this).append("<p> Some content will be added </p>");
+                $(this).prepend("<p> Some content will be added </p>");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
