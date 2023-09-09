@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>jQuery Setup</title>
+    <style>
+        div, .div{
+            border: 1px solid red;
+            padding: 20px;
+            background-color: #000;
+            color: red;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div>This is a div</div>
+    <div class="div">email address</div>
+
+    <!-- ready function shorter virsion -->
+    <script>
+        $(function(){
+            $("div").click(function(){
+                $(this).before("<div>hasnainsadid@gmail.com</div>");
+            });
+
+            $(".div").click(function(){
+                $(this).append("hasnainsadid@gmail.com");
+            }) 
+        })
+    </script>
+</body>
+</html>

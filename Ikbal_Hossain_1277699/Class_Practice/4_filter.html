@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <style>
+        .highlight{
+            font-size: 2rem;
+            color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li class="top">list item 1</li>
+            <li class="top">list item 2</li>
+            <li class="middle">list item 3</li>
+            <li class="middle">list item 4</li>
+            <li class="bottom">list item 5</li>
+            <li class="bottom">list item 6</li>
+        </ul>
+        <button class="btn1"> Button 1 </button>
+        <button class="btn1"> Button 2 </button>
+        <button class="btn2"> Button 3 </button>
+        <button class="btn2"> Button 4 </button>
+    </div>
+    <script>
+        $(function () {
+            $("li").filter(".bottom").addClass("highlight");
+            $("button").filter(".btn1").html("I want to be a free man")
+        });
+    </script>
+
+</body>
+
+</html>

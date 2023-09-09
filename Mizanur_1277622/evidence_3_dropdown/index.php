@@ -7,9 +7,11 @@ $db = new mysqli("localhost", "root", "", "wdpf55_batches");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
 </head>
-<body>
+    <div class="container">
+    <body>
     <h2>Select Batch for See Students</h2>
     <form action="">
         <select id="batchid">
@@ -23,6 +25,7 @@ $db = new mysqli("localhost", "root", "", "wdpf55_batches");
         </select>
     </form>
     <div id="studentList"></div>
+    </div>
 
     <script>
         $(function(){

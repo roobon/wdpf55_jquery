@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Index Page</title>
+</head>
+<body>
+    <h1>This is Index Page</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex voluptatibus porro consequatur ad aut. Laboriosam aspernatur possimus alias libero, numquam sint iure porro veniam dolor pariatur suscipit esse eaque, voluptates enim, exercitationem rem delectus saepe odit. Et voluptate necessitatibus velit ullam nisi veniam rem sed. Laborum alias numquam ipsum maiores!</p>
+
+    <div class="con"></div>
+    <div class="con2"></div>
+
+    <button class="btn1">Contact Us</button>
+    <button class="btn2">About Us</button>
+
+    <script>
+        $(document).ready(function(){
+            var contactLoaded = false; // Initialize a variable to track whether contact content has been loaded
+            var aboutLoaded = false;   // Initialize a variable to track whether about content has been loaded
+    
+            $(".btn1").click(function(){
+                if (!contactLoaded) { // Check if contact content has not been loaded
+                    $(".con").load("contact.html");
+                    contactLoaded = true; // Set the variable to true to indicate that contact content has been loaded
+                } else {
+                    $(".con").empty(); // Remove the loaded contact content
+                    contactLoaded = false; // Reset the variable to false
+                }
+            });
+    
+            $(".btn2").click(function(){
+                if (!aboutLoaded) { // Check if about content has not been loaded
+                    $(".con2").load("about.html");
+                    aboutLoaded = true; // Set the variable to true to indicate that about content has been loaded
+                } else {
+                    $(".con2").empty(); // Remove the loaded about content
+                    aboutLoaded = false; // Reset the variable to false
+                }
+            });
+        });
+    </script>
+</body>
+</html>
