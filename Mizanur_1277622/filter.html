@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        .highlight{
+            font-size: 20px;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div id="article">
+        <ul>
+            <li class="top">Jackfruit 1</li>
+            <li class="mid">Jackfruit 2</li>
+            <li class="end">Jackfruit 3</li>
+            <li class="top">Mango 1</li>
+            <li class="mid">Mango 2</li>
+            <li class="end">Mango 3</li>
+            <li class="top">Litchi 1</li>
+            <li class="mid">Litchi 2</li>
+            <li class="end">Litchi 3</li>
+        </ul>
+        <button class="btn1">Button 1</button>
+        <button  class="btn1">Button 1</button>
+        <button  class="btn2">Button 3</button>
+    </div>
+
+    <script>
+        $(function(){
+            $("li").filter(".end").addClass("highlight");
+            $("button").filter(".btn1").html("save");
+        });
+    </script>
+</body>
+</html>
