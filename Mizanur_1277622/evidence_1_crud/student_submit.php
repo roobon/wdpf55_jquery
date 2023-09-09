@@ -3,6 +3,7 @@
 //print_r($_POST);
 
 $db = new mysqli("localhost", "root", "", "wdpf55");
+
 extract($_REQUEST);
 
 $sql = "INSERT INTO students VALUES(NULL, '$name', '$phone', '$email')";
