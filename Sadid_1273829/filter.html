@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>add class</title>
+    <style>
+        .feature{
+            font-size: 30px;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="top">List 1</li>
+        <li class="top">List 2</li>
+        <li class="middle">List 3</li>
+        <li class="middle">List 4</li>
+        <li class="bottom">List 5</li>
+        <li class="bottom">List 6</li>
+    </ul>
+
+    <!-- ready function shorter virsion -->
+    <script>
+        $(function(){
+            $("li").filter(".middle").addClass("feature");
+        })
+    </script>
+</body>
+</html>
