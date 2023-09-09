@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <h2> Element by Index </h2>
+    <!-- eq() follow indexing pattern-->
+
+    <ul>
+        <li>Bangladesh</li>
+        <li>Srilanka</li>
+        <li>Canada</li>
+    </ul>
+
+    <p> This is paragraph 1</p>
+    <p> This is paragraph 2</p>
+    <p> This is paragraph 3</p>
+
+    <script>
+        $(document).ready(function(){
+            var item = $("li").eq(1).html();
+            //alert(item);
+            $("p").eq(2).css({"color":"red","font-size":"40px"});
+        });
+    </script>
+    
+</body>
+</html>
