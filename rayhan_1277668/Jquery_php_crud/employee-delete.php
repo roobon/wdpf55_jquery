@@ -1,14 +1,10 @@
 <?php
-include ("config.php" ); 
+include ("connection.php" ); 
 $id =$_GET['id' ];  
 $sql= "DELETE FROM  `employees` WHERE `id`  =  $id " ; 
 
 if(mysqli_query($conn , $sql)){
-    $response = [
-        'status'=>'ok',
-        'success'=>true,
-        'message'=>'Record deleted succesfully!'
-    ];
+    $response = ['message'=>'Record deleted succesfully!'];
     print_r(json_encode($response));
 }else{
     $response = [
@@ -18,4 +14,4 @@ if(mysqli_query($conn , $sql)){
     ];
     print_r(json_encode($response));
 } 
-?>
+?> 

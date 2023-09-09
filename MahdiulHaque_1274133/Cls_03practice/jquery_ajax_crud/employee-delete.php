@@ -1,5 +1,5 @@
 <?php
-include ("config.php" ); 
+include ("db_config.php" ); 
 $id =$_GET['id' ];  
 $sql= "DELETE FROM  `employees` WHERE `id`  =  $id " ; 
 
@@ -18,4 +18,4 @@ if(mysqli_query($conn , $sql)){
     ];
     print_r(json_encode($response));
 } 
-?>
+?> 
