@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>hide show</title>
+</head>
+<body>
+    <h2>Show Hide</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis vel enim! Officiis error culpa natus nostrum iste, hic nesciunt neque ullam, nulla omnis quia magni. Quo corporis optio commodi at aliquid eveniet, quas libero enim, nisi voluptatem facere fuga officia, obcaecati fugit provident molestiae quod dignissimos eaque doloremque dolorem iste similique! Praesentium veritatis, repellendus cum pariatur voluptas ut illum reiciendis nobis hic eaque, dolorum eius iure nostrum eum magni libero, fugit totam iusto dignissimos laboriosam eos. Sint minima odit ex commodi hic deleniti unde tempora sapiente accusantium, nostrum dicta. Repudiandae qui porro labore error molestiae! Accusantium, possimus libero exercitationem asperiores accusamus eius commodi in vel inventore doloremque soluta odit cupiditate numquam sit molestias, error tempora adipisci quaerat ut assumenda?</p>
+
+    <button id="btn1">Hide</button>
+    <button id="btn2">Show</button>
+    <button id="btn3">Toggle</button>
+    <button id="btn4">Show/Hide All Element</button>
+
+    <script>
+        $(function(){
+            $("#btn1").click(function(){
+                $("p").hide()
+            });
+            $("#btn2").click(function(){
+                $("p").show();
+            });
+            $("#btn3").click(function(){
+                $("p").toggle();
+            })
+            $("#btn4").click(function(){
+                $("*").hide();
+            })
+        })
+    </script>
+</body>
+</html>

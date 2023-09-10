@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+.highlight{
+    font-size: 30px;
+    color: tomato;
+}
+
+    </style>
+</head>
+<body>
+   
+    <div class="p">
+        <p>this is a paragraphp 1 <span>This is red</span></p>
+        <p>this is a paragraphp 2 <span>This is skyblue</span></p>
+        <span>some <strong>Content</strong> in span tag</span>
+    </div>
+    <script>
+        $(function () {
+            // $("li").filter(".bottom").addClass("highlight");
+            // $("p").find("span").addClass("highlight");
+            $("span").find("strong").addClass("highlight");
+        });
+    </script>
+</body>
+</html>

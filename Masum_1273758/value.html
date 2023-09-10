@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+        $("#btn1").click(function(){
+            alert("text:"+$("#test").text())
+
+        });
+        $("#btn2").click(function(){
+            alert("html:"+ $("#test").html());
+            
+        })
+        $("button").click(function(){
+                alert($("#w3s").attr("href"));
+            })
+        })
+    </script>
+    <button id="btn1">show text</button>
+    <button id="btn2">show result</button>
+    <p id="test">This is some paragraph<b>bold</b>and another paragraph</p>
+    <button>show href value</button>
+    <p><a href="htttps://www.w3school.com" id="w3s">w3school.com</a></p>
+
+</body>
+</html>
