@@ -2,11 +2,10 @@
     $server_name= "localhost";
     $user_name= "root";
     $password= "";
-    $database_name= " wdpf55_batches";
+    $database_name= "wdpf55_batches";
     
     $db= new mysqli($server_name , $user_name , $password , $database_name); 
-    
-
+ 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +21,7 @@
         <select id="batchid">
             <option value="">Select one</option>
             <?php 
-                $resullt = $db->query("SELECT * FROM batchinfo");
+                $resullt = $db->query("SELECT * FROM batch_info");
                 while($row = $resullt->fetch_assoc()):
             ?>
             <option value="<?php echo $row['id']?>"><?php echo $row['name']?></option>
@@ -48,4 +47,27 @@
     </script>
     
 </body>
+<h3>Batch Wise students</h3>
+<form action="" method="post">
+    <select name="batchid" id="batchid">
+        <option value="">Select One</option>
+        <?php 
+        $result = $db->query("SELECT FROM batch_info");
+        while($row = $result->fetch_object()):
+        ?>
+        <option value="<?php echo $rows->id ?>"><?php echo $rows->name ?></option>
+           <?php  endwhile;?>
+    </select>
+</form>
+<div id="studentList"></div>
+<script>
+    $(function () { 
+        $("#batchid").change(function () {
+            var batchid = $("#batchid").val();
+            $.post("student_list.php"), {id:batchid}, function (data, status) { 
+                $("studentList").html(data);
+             }
+          })
+     })
+</script>
 </html>
