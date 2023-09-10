@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        div{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est distinctio iusto quibusdam minima qui, saepe expedita veniam ratione maiores nihil cupiditate eius maxime commodi rem in dolorem quae aut nemo?
+    </div>
+    
+    
+        <script>
+            $(function(){
+                $("div").hover(function(){
+                    $(this).replaceWith("<h1>Content will be changed with current one</h1>");
+                })
+               
+            });
+        </script>
+</body>
+</html>

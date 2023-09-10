@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Selectors</title>
+</head>
+<body>
+    <h1>click me to hide</h1>
+    <h2>click me to hide</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nam cumque? Autem amet expedita repellat minus temporibus provident laborum? Dicta eligendi, in quaerat reprehenderit delectus cupiditate totam, nemo eius ab repellendus sapiente assumenda, dolores harum. Quasi non perferendis possimus tempore architecto accusantium maiores hic quis recusandae magni mollitia repudiandae error, officiis enim natus distinctio adipisci voluptas. Vero ut, quis laborum excepturi dolore doloremque iure odit nobis officiis accusamus aspernatur amet autem reiciendis unde odio sequi nihil quia suscipit molestiae quos. Est iusto repellendus aliquam qui quo explicabo assumenda atque voluptatum minima minus. Itaque, quaerat totam? Qui et natus iste aut repellat suscipit error iusto veritatis quisquam reiciendis. Consequuntur, quasi? Ex consequuntur quo molestias nostrum ipsum excepturi saepe iure, provident cum.</p>
+
+    <script>
+        $(function(){
+            $("h1").click(function(){
+                $(this).hide()
+            });
+
+            $("h2").click(function(){
+                $("h1").show()
+            })
+        })
+    </script>
+</body>
+</html>
