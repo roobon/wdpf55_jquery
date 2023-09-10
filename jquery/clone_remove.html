@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $(".box").clone().appendTo("body");
+  });
+  $(".box").click(function(){
+  	$(this).remove()
+  })
+});
+</script>
+<style>
+ .box{height:100px;width:100px; background-color:red; margin:5px;
+</style>
+</head>
+<body>
+<button>Clone all p elements, and append them to the body element</button>
+<div class="box">This is a paragraph.</div>
+
+
+
+
+</body>
+</html>
