@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+<h2> Attr text </h2>    
+<p title="Kings of Titans"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit consectetur dolor optio perferendis voluptatum dolorum, dicta quas culpa. Obcaecati dolore maiores consequatur, iure cupiditate nisi? Ut cum consequuntur ipsa sunt. </p>
+
+<h1> </h1>
+
+<button class="btn1"> show title </button>
+<!-- <button class="btn2">  change color </button> -->
+
+
+<script>
+    $(function() {
+    // var content =   $("p").attr("title");  //show title
+    var content =   $("p").text();      //show content
+    //alert(content) ;
+    $(".btn1").click(function() {
+        $("h1").text(content) ;
+    })
+    })
+</script>
+
+
+</body>
+</html>

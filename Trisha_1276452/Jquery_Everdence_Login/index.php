@@ -4,31 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-</head>
+    <script src="jquery.min.js"></script>
+    <style>
+        .success {
+            color:green;
+            padding: 30px;
+        }
+
+        .fail {
+            color:red;
+            padding: 30px;
+        }
+    </style>
 </head>
 <body>
-    <h2> Login Form</h2>
-    <div class="massage"></div>
-    <form action="">
-        <input type="email" name="email" placeholder="Enter email"> <br>
-        <input type="password" name="password" placeholder="Enter password"> <br>
-        <button type="button" id="btnlogin">Login</button>
+    <h2>Login Form</h2>
+    <div class="message"></div>
+    
+    <form action="" id="myform">
+        <input type="email" name="email" id="email" placeholder="Enter email"><br>
+        <input type="password" name="password" id="password" placeholder="Enter password"><br>
+        <button type="button" id="btnLogin">Login</button>
     </form>
-
+    
     <script>
-        $(document).ready(function(){
-            $("#btnlogin").click(function(){
-                // alert($("email").val());
+        $(document).ready(function () {
+            $("#btnLogin").click(function(){
+                //alert($("#email").val());
+               var email = $("[name='email']").val();
+               var password = $("[name='password']").val();
 
-                var email =$("[name= 'email']").val();
-                var password =$("[name= 'password']").val();
+               $.post("login.php",{e:email, p:password} , function(data, status){
+                    $(".message").html(data);
+               });
 
-                $.post("login.php",{email:email,password:password}, function(data,status){
-                    $(".massage").html(data);
-                })
-                
-            });
+            })
         });
     </script>
 </body>

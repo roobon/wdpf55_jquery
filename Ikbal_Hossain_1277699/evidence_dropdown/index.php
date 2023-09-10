@@ -23,10 +23,12 @@ $db = new mysqli($server_name, $user_name, $password, $database_name);
         <select name="" id="batchId">
             <option value="">Select one</option>
             <?php
-            $result = $db->query("SELECT * FROM batch_info");
+            $sql = "SELECT * FROM batch_info";
+            $result = $db->query($sql);
+            // $result = $db->query("SELECT * FROM batch_info");
             while ($row = $result->fetch_object()) :
             ?>
-                <option value="<?php echo $row->batch_id ?>"> "<?php echo $row->batch_name?>" </option>
+                <option value="<?php echo $row->batch_id ?>"> <?php echo $row->batch_name ?> </option>
             <?php endwhile ?>
         </select>
     </form>
