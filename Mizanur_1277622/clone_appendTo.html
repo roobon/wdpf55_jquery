@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+      <button id="btn1">Clone Div 1</button>
+      <!-- <button id="btn2">Clone Div 2</button>
+      <button id="btn3">Clone Div 3</button> -->
+    <div id="div1" style="background-color: rebeccapurple ; height : 100px ; width: 100px; margin: 10px;"></div>
+    <!-- <div id="div2" style="background-color: aqua ; height : 100px ; width: 100px; display:none;"></div>
+    <div id="div3" style="background-color: red ; height : 100px ; width: 100px; display:none;"></div> -->
+
+    <script>
+        $(document).ready(function () {
+          $("#btn1").click(function () {
+            $("#div1").clone().appendTo("body");
+            $(this).click(function(){
+                $("#div1").remove()
+            })
+          });
+
+        });
+    </script>
+  </body>
+</html>
