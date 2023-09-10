@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+    div{
+        background-color: tomato;
+        height: 100px;
+        width:  100px;
+    }
+    </style>
+</head>
+<body>
+    <input type="text" id="stid">
+    <button>Click Here</button>
+    <div></div>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var sid = $("#stid").val();
+                $.post("students.php", {id:sid} function(data, status){
+                   $("div").html(data);
+                })
+            })
+        })
+    </script>
+   
+</body>
+</html>

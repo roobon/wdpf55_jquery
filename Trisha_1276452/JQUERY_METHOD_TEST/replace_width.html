@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <style>
+        div{border: 1px solid;}
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore id molestiae obcaecati consequuntur assumenda illum fuga consequatur et officia mollitia sequi quisquam accusantium, repudiandae maxime ipsa, nesciunt doloremque eveniet pariatur.</div>
+    
+    
+    <script>
+       $(function(){
+        $("div").hover (function(){
+            $(this).replaceWith("<h1>content will be changed</h1>")
+        }
+        
+
+       })
+    </script>
+</body>
+</html>

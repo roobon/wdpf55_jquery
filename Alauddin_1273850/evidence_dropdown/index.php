@@ -32,7 +32,8 @@ $db = new mysqli("localhost", "root", "", "wdpf55_batches");
     <script>
         $(function(){
             $("#batchid").change(function(){
-                $.post("students_list.php", {id:batchid}, function(data, status){
+                var batchid = $("#batchid").val();
+                $.post("students_list.php", {abc:batchid}, function(data, status){
                     $("#studentlist").html(data);
                 });
             });
