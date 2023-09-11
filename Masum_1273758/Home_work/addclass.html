@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <style>
+        .feature{
+        background-color: rgb(26, 86, 86);
+        color: white;
+        }
+        .feature2{
+            background-color: darkblue;
+            color: antiquewhite;
+        }
+        .intro{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Bangaldeshis is a Beautiful Country</h1>
+    <h1 id="heading2">Bangaldeshi is most Islamic Country</h1>
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ducimus nobis corporis molestias sapiente doloribus commodi alias aperiam quaerat similique.</p>
+    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ducimus nobis corporis molestias sapiente doloribus commodi alias aperiam quaerat similique.</p>
+    <button>Show out put</button>
+    <button id="btn2">Show out put</button>
+    <script>
+        $(function(){
+            $("button").click(function(){
+                $("#heading").addClass("feature");
+            })
+           $("button").click(function(){
+            $(".p1").addClass("feature2")
+           })
+           $("#btn2").click(function(){
+            $("#$heading2").addClass("intro feature2")
+           })
+        })
+    </script>
+    
+</body>
+</html>
