@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+    <style>
+        .highlight{
+            font-size: 30px;
+            color: forestgreen
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is 1st paragraph and <span>This is REd</span></p>
+        <p>This is 2st paragraph and <span>This is Also REd</span></p>
+        
+    </div>
+    <script>
+        $(function(){
+            $("p").find("span").addClass("highlight");
+        })
+    </script>
+</body>
+</html>

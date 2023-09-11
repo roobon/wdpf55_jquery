@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <p title="I am here so, no fear"><b>Lorem ipsum dolor, sit amet</b> consectetur adipisicing elit. Error deserunt reiciendis, hic totam ipsum qui aperiam, maxime, quidem quibusdam omnis dolorum quasi explicabo maiores veniam quis officia laudantium ullam quae?</p>
+
+    <div>Content will come </div>
+    <button>Click here </button>
+
+    <script>
+        $(document).ready(function(){
+            var content = $("p").html();
+
+            $("button").click(function(){
+                $("div").html(content);
+            });
+        });
+    </script>
+</body>
+</html>

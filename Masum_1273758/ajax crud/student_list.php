@@ -52,8 +52,9 @@ $myDB = new mysqli("localhost","root","","wdpf55")
  <script>
     $(function(){
         $("#btn").click(function(){
-            $.post("student_submit.html",("form").serialize(), function(data,status){
+            $.post("student_submit.php",$("form").serialize(), function(data,status){
                 $(".show").html(data)
+                location.reload(true)
             })
         })
     })
