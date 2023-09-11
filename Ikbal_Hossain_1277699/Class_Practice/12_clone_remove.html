@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $("div").clone().appendTo("body");
+            });
+        });
+    </script>
+
+    <div class="this">
+        <div class="btn"> <button id="btn"></button></div>
+    </div>
+    <button class="btn1">Clone the div </button>
+    <button class="btn2">Remove the clone div</button>
+
+    <script>
+          $(document).ready(function () {
+            $(".btn2").click(function () {
+                $("this").clone().appendTo("body");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
