@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- jQuery -->
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	<style>
+		body {
+			text-align: center;
+		}
+		h1 {
+			color: green;
+			font-size: 2.5rem;
+		}
+		button {
+			margin-top: 2rem;
+			cursor: pointer;
+		}
+		form {
+			width: 300px;
+			margin: 0 auto;
+		}
+		input[type="submit"] {
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>GeeksforGeeks</h1>
+	<form>
+		<fieldset>
+			<legend>Details</legend>
+			<label for="first_name">First name:</label>
+			<input type="text" id="first-name" name="fname" />
+			<br /><br />
+			<label for="last_name">Last name:</label>
+			<input type="text" id="last-name" name="lname" />
+			<br /><br />
+			<label for="gender">Gender : </label>
+			<input type="radio" name="gender" /> Male
+			<input type="radio" name="gender" /> Female <br /><br />
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" />
+			<br /><br />
+			<input type="submit" value="Submit" class="submit-btn" />
+		</fieldset>
+	</form>
+	<script type="text/javascript">
+		// $("form").on("submit", function (e) {
+		// 	e.preventDefault();
+		// });
+	</script>
+</body>
+</html>

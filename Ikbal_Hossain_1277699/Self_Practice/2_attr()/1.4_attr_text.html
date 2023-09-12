@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <p class="para1" title="This is Ikbal Hossain">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptas recusandae ratione, odio, repellendus,
+        cupiditate iusto odit quo natus corrupti fugiat veritatis itaque provident accusamus reiciendis excepturi neque
+        omnis at!
+    </p>
+
+    <p class="para2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nulla eveniet quos est velit, quas maxime? Omnis
+        fugit molestiae nobis, nemo voluptate reprehenderit corrupti dolor eligendi tempore eaque adipisci doloribus?
+    </p>
+
+    <p class="para3">
+        <b>Lorem ipsum dolor sit,</b>amet consectetur adipisicing elit. Consequatur officia dolorum, mollitia enim
+        reiciendis omnis nesciunt sint est molestias distinctio cupiditate doloremque harum ut maxime excepturi sunt ea
+        vitae nemo?
+    </p>
+
+    <div class="div1">Title content will show
+    </div> <br> 
+
+    <div class="div2">Paragraph content will show
+    </div> <br> 
+
+    <div class="div3">
+        paragraph with all tag will show
+    </div> <br> 
+
+    <button class="btn1">
+        Click here for attribute
+    </button> 
+
+    <button class="btn2">
+        Click here for text content
+    </button>
+
+    <button class="btn3">
+        Click here for html content
+    </button>
+
+    <script>
+        $(function () {
+            var title = $("p:first").attr("title");
+            var content2 = $(".para2").text();
+            var content3 = $(".para3").html();
+
+            $(".btn1").click(function () {
+                $(".div1").text(title)
+            });
+
+            $(".btn2").click(function(){
+                $(".div2").text(content2)
+            });
+
+            $(".btn3").click(function(){
+                $(".div3").html(content3)
+            });
+        });
+    </script>
+</body>
+
+</html>

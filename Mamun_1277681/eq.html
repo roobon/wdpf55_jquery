@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <h2>Elements by index</h2>
+    <ul>
+        <li>Bangladesh</li>
+        <li>Srilanka</li>
+        <li>Pakistan</li>
+       
+    </ul>
+    <ul>
+        <li>Strawberry</li>
+        <li>Raspberry</li>
+        <li>Cherry</li>
+       
+    </ul>
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 2</p>
+    <p>This is paragraph 3</p>
+    <script>
+        $(function () {
+          $("li").eq(1).html();
+          $("p").eq(2).css({"color":"red", "font-size": "50px"});
+          $("li:first-child").css({"color":"tomato", "font-size":"40px"})
+          $("li:nth(1)").css({"color":"purple", "font-size":"40px"})
+          $("li:first").css({"color":"blue", "font-size":"40px"})
+          $("li:nth(1)").css({"color":"green", "font-size":"40px"})
+         
+        });
+    </script>
+</body>
+</html>

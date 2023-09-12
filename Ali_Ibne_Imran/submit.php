@@ -3,12 +3,12 @@
 <?php 
     extract($_REQUEST);
     
-//echo "INSERT INTO product VALUE(NULL,'$name','$dob','$email')";
-    $sql = "INSERT INTO students VALUE(NULL,'$name','$dob','$email')";
+echo "INSERT INTO product VALUE(NULL,'$name','$price')";
+    $sql = "INSERT INTO product VALUE(NULL,'$name','$price')";
     $db->query($sql);
 
-    // if($db->affected_rows){
-    //     //echo "Success";
-    //     //header("Location: products.php");
-    //  }
+    if($db->affected_rows){
+        echo "Success";
+        header("Location: products.php");
+     }
 ?>

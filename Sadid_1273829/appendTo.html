@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>jQuery Setup</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 1px solid red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <!-- <button class="btn1">remove</button> -->
+    <button>click me</button>
+    
+    <script>
+        $(function(){
+            $("button").click(function(){
+                $(".box").clone().append("body")
+            })
+        })
+    </script>
+</body>
+</html>

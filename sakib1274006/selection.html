@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <h1>Hide and Show paragraph</h1>
+    <h2>Hide and Show paragraph</h2>
+    <h3>Hide and Show paragraph</h3>
+    <h4>Hide and Show paragraph</h4>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam a rem nihil inventore velit sunt, cupiditate sed sequi assumenda et dolores doloribus repellat aliquid odio cumque quia officiis hic magni.</p>
+
+    <button class="btn1">Click Here</button>
+    
+
+    
+    <script>
+        $(function(){
+            $("h1").click(function(){
+                $(this).hide();
+            })
+            $("h2").click(function(){
+                $(this).show();
+            })
+            $("h3").click(function(){
+                $(this).toggle();
+            })
+            $("h4").click(function(){
+                $(this).hide();
+            })
+            $("#btn1").click(function(){
+                $("*").toggle();
+            })
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <p title="This is for me">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit est recusandae tempore, suscipit saepe consequuntur facilis soluta enim praesentium officiis tempora reiciendis voluptas molestias odio esse dicta obcaecati rerum minus?</p>
+
+    <h1>Content will come </h1>
+    <button> Click here </button>
+    <script>
+        $(document).ready(function(){
+            var content = $("p").text();
+
+            $("button").click(function(){
+                $("h1").text(content);
+            })
+        })
+    </script>
+</body>
+</html>
