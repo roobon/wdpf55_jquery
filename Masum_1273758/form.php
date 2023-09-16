@@ -16,6 +16,10 @@
            border-radius: 20px;
            width: 300px;
         }
+        #display{
+            font-size: 60px;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -27,9 +31,11 @@
     
     ?>
         <select id="divisionid">
+        <option value="">Select Division</option>
            
             <?php while($row = $result->fetch_assoc()):
                 ?>
+                
                 
 <option value="<?php echo $row['Id']?>"><?php echo  $row['Name']?>
 </option>
