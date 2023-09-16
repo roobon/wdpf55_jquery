@@ -11,10 +11,10 @@ $result = $db->query($sql);
     <select name="" id="">
         <option value="">Select One</option>
 
-        <?php while($row=$result->fetch_assoc()){
+        <?php while($row=$result->fetch_object()){
         ?>
 
-        <option value="<?php echo $row['dis_id']?>"> <?php echo $row['dis_name']?></option>
+        <option value="<?php echo $row->dis_id?>"> <?php echo $row->dis_name?></option>
         <?php  }?>
 
     </select>

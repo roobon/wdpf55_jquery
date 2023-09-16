@@ -22,7 +22,7 @@
 
     ?>
     <h3>Division List</h3>
-    <form action="" method="post">
+    <form action="">
         <select name="" id="divisionId">
             <option value="">Select One </option>
             <?php
@@ -34,13 +34,10 @@
 
         </select>
 
-    </form>
-    <div>
-        <h3>District List</h3>
-        <select name="" id="display">
-            <option value="">Select One</option>
-        </select>
-    </div>
+    </form> <br> <br>
+
+    <div id="display"> </div>
+   
 
     <script>
         $(function() {
@@ -48,7 +45,7 @@
                 var division_id = $("#divisionId").val();
                 // alert($("#divisionId").val());
                 $.post("district.php", {a: division_id}, function(data, status) { // three parameter url, data, call back function
-                    ("#display").html(data)
+                    $("#display").html(data)
                 });
             });
         });
