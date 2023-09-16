@@ -12,34 +12,61 @@
         color: white;
         }
         .feature2{
-            background-color: darkblue;
-            color: antiquewhite;
+            background-color:cornflowerblue;
+            color:yellow;
         }
         .intro{
             font-size: 30px;
         }
+        .intro2{
+            font-size: 20px;
+            color: chartreuse;
+
+        }
+        .main{
+            background-color:darkblue;
+            color: white;
+            border: 2px solid black;
+            font-size: 40px;
+        }
     </style>
 </head>
 <body>
-    <h1 id="heading">Bangaldeshis is a Beautiful Country</h1>
-    <h1 id="heading2">Bangaldeshi is most Islamic Country</h1>
+    <!-- <h1 id="heading">Bangaldeshis is a Beautiful Country</h1>
+    <h1 id="heading2">Bangaldeshi most people of Muslim</h1>
     <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ducimus nobis corporis molestias sapiente doloribus commodi alias aperiam quaerat similique.</p>
-    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ducimus nobis corporis molestias sapiente doloribus commodi alias aperiam quaerat similique.</p>
-    <button>Show out put</button>
-    <button id="btn2">Show out put</button>
+    
+    <button id="btn1">Show out put</button>
+    <button id="btn2">Show heading</button> -->
     <script>
-        $(function(){
-            $("button").click(function(){
-                $("#heading").addClass("feature");
-            })
-           $("button").click(function(){
-            $(".p1").addClass("feature2")
-           })
-           $("#btn2").click(function(){
-            $("#$heading2").addClass("intro feature2")
-           })
+        // $(function(){
+        //     $("#btn1").click(function(){
+        //         $("#heading").addClass("feature");
+        //     })
+        //    $("#btn1").click(function(){
+        //     $(".p1").addClass("feature2")
+        //    })
+        //    $("#btn2").click(function(){
+        //     $("#heading2").addClass("feature2")
+        //    })
+        // })
+    </script>
+    <h1>This is Heading</h1>
+    <p>This is Another Pragraphe</p>
+    <p class="intro2">Bangladesh is a Beautiful Country</p>
+    <button class="btn1">show result</button>
+    <button class="btn2">Show View</button>
+    <script>
+        $(document).ready(function(){
+        $(".btn1").click(function(){
+            $("p:first").addClass("intro");
+        })
+        $(".btn2").click(function(){
+        $("p:last").removeClass("intro2").addClass("main")
+        })
         })
     </script>
+
     
 </body>
 </html>
