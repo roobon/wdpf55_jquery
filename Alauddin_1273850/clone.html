@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        This is paragraph
+    </div>
+    <div>
+        This is another paragraph
+    </div>
+    <button class="btn1">Clone all div and append them to the body element</button>
+    <div class="content"></div>
+    
+
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                $("div").clone().appendTo(".content")
+            });
+            $(".content").click(function(){
+                $(this).remove();
+            });
+        });
+    </script>
+</body>
+</html>
