@@ -7,15 +7,19 @@ $sql = "SELECT * FROM district WHERE div_id ='$id'";
 $result = $db->query($sql);
 ?>
 
-<form action="">
-    <select name="" id="">
-        <option value="">Select One</option>
+<div>
+    <h3>District List</h3>
+    <form action="">
+        <select name="" id="">
 
-        <?php while($row=$result->fetch_object()){
-        ?>
+            <option value="">Select One</option>
 
-        <option value="<?php echo $row->dis_id?>"> <?php echo $row->dis_name?></option>
-        <?php  }?>
+            <?php while ($row = $result->fetch_object()) {
+            ?>
 
-    </select>
-</form>
+                <option value="<?php echo $row->dis_id ?>"> <?php echo $row->dis_name ?></option>
+            <?php  } ?>
+
+        </select>
+    </form>
+</div>
