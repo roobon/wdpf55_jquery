@@ -1,0 +1,14 @@
+<?php
+include ("db_config.php" ); 
+$id =$_GET['id' ];  
+$sql= "DELETE FROM  `employees` WHERE `id`  =  $id " ; 
+
+if(mysqli_query($conn , $sql)){
+    $response = ['message'=>'Record deleted succesfully!'];
+    print_r(json_encode($response));
+}else{
+    $response = ['message'=>'Record deleted failed!'
+    ];
+    print_r(json_encode($response));
+} 
+?> 

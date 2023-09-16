@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet perferendis temporibus nihil sit dolore nesciunt. Illo quibusdam nemo corporis provident! Sequi, eos? Excepturi, in enim.</div>
+    <button class="clone">show Append</button>
+    <button class="remove">Hidden text</button>
+    <script>
+        $(document).ready(function(){
+            $(".clone").click(function(){
+                $("#box").clone().appendTo("#box")
+                $(".remove").click(function(){
+                    $("#box").remove();
+                })
+            })
+        })
+    </script>
+</body>
+</html>

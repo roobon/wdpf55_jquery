@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        .intro{
+            font-size: 30px;
+            background-color: chartreuse;
+            color: red;
+        }
+    </style>
+
+</head>
+<p>this is pipneApple</p>
+<p>this is jackfruit</p>
+<button class="btn1">click the button Element show before</button>
+<button id="btn2">click the button Element show after</button>
+<script>
+    $(document).ready(function(){
+        $(".btn1").click(function(){
+            $("p").before("<p>HELLO PHP SERVER SCRIPTING LANGUAGE</p>")
+        })
+        $("#btn2").click(function(){
+        $("p").after("<p>Bangladesh most people Muslim</p>").addClass("intro")
+         } )
+    })
+</script>
+
+<body>
+    
+</body>
+</html>

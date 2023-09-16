@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<style>
+    .intro{
+        background-color: darkgreen;
+        color: beige;
+        border: 2px solid greenyellow;
+    }
+</style>
+</head>
+<body>
+    <p>Cox's Bazer most tourist place</p>
+    <p>Bangaldesh natural Beauty.</p>
+    <ul>
+        <li>Orange</li>
+        <li>Green</li>
+        <li>Yellow</li>
+        <li>Purple</li>
+        <button class="btn1">show result</button>
+        <button class="btn2">List view</button>
+        <script>
+            $(document).ready(function(){
+                $(".btn1").click(function(){
+                    $("p").append("<b>Hello PHP</b>");
+                })
+               $(".btn2").click(function(){
+                $("li").append("<p>Javascript High level Language</p>").addClass("intro")
+               })
+            })
+        </script>
+    </ul>
+</body>
+</html>
