@@ -1,37 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
-<body>
-    <?php 
-        // $host ="localhost";
-        // $user = "root";
-        // $password = "";
-        // $database = "country";
-        
-        $db = new mysqli("localhost", "root", "", "country");
 
-        $sql = "SELECT * FROM district";
-        $result = $db->query($sql);
+<body>
+    <?php
+    // $host ="localhost";
+    // $user = "root";
+    // $password = "";
+    // $database = "country";
+
+    $db = new mysqli("localhost", "root", "", "country");
+
+    $sql = "SELECT * FROM division";
+    $result = $db->query($sql);
 
     ?>
-        <h3>District Name</h3>
-    <form action="">
-        <select name="" id="">
-            <option value="">Select One</option>
-            <option value="1">Dhaka</option>
-            <option value="2">Chottogram</option>
-            <option value="3">Barishal</option>
-            <option value="4">Rangpur</option>
-            <option value="5">Khulna</option>
-            <option value="6">Mymensingh</option>
-            <option value="7">Sylhet </option>
+    <h3>Division List</h3>
+    <form action="" method="post">
+        <select name="" id="divisionId">
+            <option value="">Select One </option>
+            <?php
+            while ($row = $result->fetch_object()) {
+
+            ?>
+                <option value="<?php echo $row->div_id ?>"> <?php echo $row->div_name ?> </option>
+            <?php } ?>
+
         </select>
 
     </form>
+    <div>
+        <h3>District List</h3>
+        <select name="" id="display">
+            <option value="">Select One</option>
+        </select>
+    </div>
+
+    <script>
+        $(function() {
+            $("#divisionId").change(function() {
+                var division_id = $("#divisionId").val();
+                // alert($("#divisionId").val());
+                $.post("district.php", {a: division_id}, function(data, status) { // three parameter url, data, call back function
+                    ("#display").html(data)
+                });
+            });
+        });
+    </script>
 
 </body>
+
 </html>
