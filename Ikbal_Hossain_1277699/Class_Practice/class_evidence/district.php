@@ -6,5 +6,6 @@
     $sql = "Select * FROM district WHERE dis_id = div_id";
     $result = $db->query($sql);
     
+
 ?>
 
