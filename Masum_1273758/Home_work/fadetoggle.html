@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <div id="div1" style="width: 80px; height: 80px; background-color: rgb(134, 134, 52); display: none;"></div><br>
+    <div id="div2" style="width: 80px; height: 80px; background-color:rgb(102, 102, 179) ; display: none;"></div>
+    <div id="div3" style="width: 80px; height: 80px; background-color: rgb(128, 65, 20); display: none;"></div>
+    <button>Click button  fadeToggle content Show</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").fadeToggle("fast");
+                $("#div2").fadeToggle("slow");
+                $("#div3").fadeToggle("milliseconds");
+            })
+        })
+    </script>
+</body>
+</html>

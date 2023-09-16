@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        .intro{
+            background-color: darkslategrey;
+            color: darkslateblue;;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <p>this is Pragraph</p>
+    <p>This is Another Pragraph</p>
+    <button>Select content remove replace with another content</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p:first").replaceWith("Hello Jquery of Javascript Fram work").addClass("intro");
+        })
+            })
+           
+    </script>
+</body>
+</html>
