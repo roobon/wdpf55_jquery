@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        .intro{
+            background-color: darkslateblue;
+            color: wheat;
+            font-size: 20px;
+        }
+    </style>
+<script>
+    
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("p").prepend("<b>please come here prepend</b>")
+        })
+        $("#btn2").click(function(){
+            $("li").prepend("This is National fruits").addClass("intro")
+        })
+    })
+</script>
+</head>
+<body>
+    <p>This is Pragraphe</p>
+    <p>This is Another Pragraphe</p>
+    <ol>
+        <li>Mango</li>
+        <li>Apple</li>
+        <li>jackfruit</li>
+        
+    </ol>
+    <button id="btn1">Prepend Text</button>
+    <button id="btn2">Prepend List</button>
+</body>
+</html>
