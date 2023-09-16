@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <style>
+        .feature{
+        background-color: rgb(26, 86, 86);
+        color: white;
+        }
+        .feature2{
+            background-color:cornflowerblue;
+            color:yellow;
+        }
+        .intro{
+            font-size: 30px;
+        }
+        .intro2{
+            font-size: 20px;
+            color: chartreuse;
+
+        }
+        .main{
+            background-color:darkblue;
+            color: white;
+            border: 2px solid black;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 id="heading">Bangaldeshis is a Beautiful Country</h1>
+    <h1 id="heading2">Bangaldeshi most people of Muslim</h1>
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ducimus nobis corporis molestias sapiente doloribus commodi alias aperiam quaerat similique.</p>
+    
+    <button id="btn1">Show out put</button>
+    <button id="btn2">Show heading</button> -->
+    <script>
+        // $(function(){
+        //     $("#btn1").click(function(){
+        //         $("#heading").addClass("feature");
+        //     })
+        //    $("#btn1").click(function(){
+        //     $(".p1").addClass("feature2")
+        //    })
+        //    $("#btn2").click(function(){
+        //     $("#heading2").addClass("feature2")
+        //    })
+        // })
+    </script>
+    <h1>This is Heading</h1>
+    <p>This is Another Pragraphe</p>
+    <p class="intro2">Bangladesh is a Beautiful Country</p>
+    <button class="btn1">show result</button>
+    <button class="btn2">Show View</button>
+    <script>
+        $(document).ready(function(){
+        $(".btn1").click(function(){
+            $("p:first").addClass("intro");
+        })
+        $(".btn2").click(function(){
+        $("p:last").removeClass("intro2").addClass("main")
+        })
+        })
+    </script>
+
+    
+</body>
+</html>

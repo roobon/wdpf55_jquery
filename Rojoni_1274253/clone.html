@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        div{background-color: aqua;}
+
+
+    </style>
+    <div class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis aliquid nulla culpa quae dolorem esse ex commodi doloribus cum, quibusdam sed error veritatis molestiae exercitationem asperiores? Amet exercitationem laudantium doloribus.</div>
+    <div class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto explicabo libero tempora totam quae, non quod dolores nisi ad voluptatum cum necessitatibus sed officia sint ducimus, similique doloremque qui! Veniam.</div>
+
+    <button class="btn1">Clone all p elements, and append them to the body element</button>
+    <button class="btn2">Remove all p elements, and append them to the body element</button>
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                $("div").clone().appendTo("body");
+            })
+            $("div").click(function(){
+                $("p2").remove();
+            })
+            
+
+        })
+    </script>
+    
+</body>
+</html>
