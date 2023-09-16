@@ -9,16 +9,18 @@
 </head>
 
 <body>
-    <p title="This is the title of paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quae aliquam dolore, quo, illum provident autem perferendis, atque necessitatibus ipsam cumque perspiciatis sequi? Quaerat tempora similique odio, harum est molestiae?</p>
+    <p title="This is the title of paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quae
+        aliquam dolore, quo, illum provident autem perferendis, atque necessitatibus ipsam cumque perspiciatis sequi?
+        Quaerat tempora similique odio, harum est molestiae?</p>
 
     <h1>Content will come</h1>
 
     <button>Click here</button>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             var content = $("p").attr("title");
 
-            $("button").click(function(){
+            $("button").click(function () {
                 $("h1").text(content);
             });
         });

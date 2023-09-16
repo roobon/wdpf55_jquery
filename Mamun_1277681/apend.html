@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+      
+        .article{
+            height: 200px;
+            width: 200px;
+            background-color: tomato;
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="article">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero iusto, illum est et quos consequatur ullam deserunt, velit ab sapiente odit placeat doloribus veniam quae magni natus cupiditate sit ratione.</p>
+    </div>
+    <button class="btn-1">append all</button>
+    <button class="btn-2">remove</button>
+    <div class="box">
+    </div>
+    
+
+    <script>
+        $(document).ready(function(){
+            $(".article").click(function(){
+                $("this").remove();
+            })
+        }); 
+            $(".btn-1").click(function(){
+                $(".article").clone().appendTo("body");
+            })
+        
+    </script>
+  
+</body>
+</html>
