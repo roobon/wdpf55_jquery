@@ -38,13 +38,14 @@
         <!-- <button type="button" id="divisionid">Click Button</button> -->
         
         </form>
+            <div id="display"></div>
         <script>
             $(function(){
             $("#divisionid").change(function(){
                 // alert($("#divisionid").val())
                 var divison_id = $("#divisionid").val();
-                $.post("district_list.php",{id:divison_id},function(data,status){
-                    
+                $.post("district_list.php",{id:divison_id},function(data, status) {
+                    $("#display").html(data);
                 })
 
             })
