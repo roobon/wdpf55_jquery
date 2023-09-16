@@ -24,7 +24,9 @@
     }
     #display {
         margin-top: 20px;
-
+        font-size: 20px;
+        color: grey;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
  
 
@@ -41,7 +43,7 @@ $result = $db->query($sql);
 ?>
 
 <select name="" id="select_id">
-    <option value=""> Select One </option>
+    <option value=""> Select Division </option>
     <?php while ( $data = $result->fetch_assoc() ) {?>
 
     <option value=" <?php echo $data['id'] ;?> ">  <?php echo $data['name'] ;?> </option>
