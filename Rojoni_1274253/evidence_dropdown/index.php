@@ -1,12 +1,5 @@
 <?php 
-    $server_name= "localhost";
-    $user_name= "root";
-    $password= "";
-    $database_name= "wdpf55_batches";
-    
-    $db= new mysqli($server_name , $user_name , $password , $database_name); 
-    
-
+$db = new mysqli("localhost", "root", "", "wdpf55_batches");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,38 +7,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="jquery_3.6.4_jquery.min.js"></script>
+    
+    
 </head>
 <body>
     <h3>Batch wise Students</h3>
     <form action="">
-        <select id="batchid">
-            <option value="">Select one</option>
-            <?php 
-                $resullt = $db->query("SELECT * FROM batchinfo");
-                while($row = $resullt->fetch_assoc()):
-            ?>
-            <option value="<?php echo $row['id']?>"><?php echo $row['name']?></option>
-            <?php 
-                endwhile;
-            ?>        
-
+        <select name="" id="batchid">
+    <option value="">Select one</option>
+        <?php 
+            $result = $db->query("SELECT * FROM batchinfo ");
+            while($row = $result->fetch_assoc()):
+        
+        ?>
+        <option value="<?php echo $row['id'] ?>"><?php echo $row['name'] ?></option>
+        <?php endwhile; ?>
         </select>
     </form>
-
-    <div id="studentList"></div>
-
+    <div id="studentlist">
+       
+    </div>
 
     <script>
-        $(function () {
+        $(function(){
             $("#batchid").change(function(){
                 var batchid = $("#batchid").val();
-                $.post("student_list.php", {id:batchid}, function(data, status){
-                    $("#studentList").html(data);
-                })
-            })
+                $.post("student_list.php", {abc:batchid}, function(data, status){
+                    $("#studentlist").html(data);
+                });
+            });
         });
     </script>
-    
 </body>
 </html>
