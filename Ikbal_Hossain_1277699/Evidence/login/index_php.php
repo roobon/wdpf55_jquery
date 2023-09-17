@@ -24,7 +24,7 @@
     $server_name = "localhost";
     $user_name = "root";
     $password = "";
-    $database_name = "project";
+    $database_name = "jquery_sample";
 
     $db = new mysqli($server_name, $user_name, $password, $database_name);
 
