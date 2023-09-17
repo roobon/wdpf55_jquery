@@ -27,7 +27,7 @@
 
     <script>
         $(document).ready(function (){
-            $("btnLogin").click(function(){
+            $("#btnLogin").click(function(){
                 var email = $("[name = 'email']").val();
                 var password = $("[name = 'password']").val();
 

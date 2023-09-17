@@ -1,6 +1,11 @@
 <?php 
  
-  $db = new mysqli("localhost", "root" , "" , "factory_details");
+ $server_name= "localhost";
+ $user_name= "root";
+ $password= "";
+ $database_name= "factory_detalis";
+ $db= new mysqli($server_name , $user_name , $password , $database_name);
+  
   
   $e = $_POST['e'];
   "<br>";
