@@ -44,9 +44,7 @@
             $("#divisionId").change(function() {
                 var division_id = $("#divisionId").val();
                 // alert($("#divisionId").val());
-                $.post("district.php", {
-                    a: division_id
-                }, function(data, status) { // three parameter url, data, call back function
+                $.post("district.php", {a: division_id}, function(data, status) { // three parameter url, data, call back function
                     $("#display").html(data)
                 });
             });
