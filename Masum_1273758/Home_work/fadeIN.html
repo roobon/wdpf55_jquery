@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <div id="div1" style="width: 80px; height: 80px; background-color: yellow; display: none;"></div><br>
+    <div id="div2" style="width: 80px; height: 80px; background-color:darkblue ; display: none;"></div>
+    <div id="div3" style="width: 80px; height: 80px; background-color: chocolate; display: none;"></div>
+    <button>Click button fade content Show</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").fadeIn("fast");
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(5000);
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                alert("outer height count:" + $("div").outerHeight());
+            })
+        })
+    </script>
+    <div style="width: 300px; height: 200px; padding: 10px; margin: 5px; border: 2px solid green; background-color: lightblue;"></div>
+    <button>Height and width result show</button>
+</body>
+</html>
