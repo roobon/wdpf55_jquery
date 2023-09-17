@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".clone").click(function(){
+    $(".box").clone().appendTo("body");
+  });
+
+  $("body").on("click", ".box", function(){
+    $(this).remove();
+  });
+});
+</script>
+<style>
+.box{
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+body{
+    display: grid;
+    
+}
+
+</style>
+</head>
+<body>
+
+    
+   <div> <button class="clone">Clone</button></div>
+    
+    <div class="box"></div>
+       
+    
+   
+
+</body>
+</html>
