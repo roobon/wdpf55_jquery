@@ -23,6 +23,7 @@
     <h2>Login Form</h2>
 
     <div class="message"></div>
+    
     <form action="" id="myform">
         <input type="email" name="email" id="email" placeholder="Enter email"> <br>
         <input type="password" name="password" id="password" placeholder="Enter password"> <br>

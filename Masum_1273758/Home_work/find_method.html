@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+    .intro * {
+        border: 2px solid blueviolet;
+        /* display: block; */
+        
+         margin: 5px;
+         padding: 10px;
+    }
+
+</style>
+    <script>
+        $(document).ready(function(){
+            $("li").find("span").css({"color":"green","border":"2px solid black"});
+        })
+    </script>
+
+</head>
+<body class="intro"> body(great-grandparent);
+    <div style="width: 500px;">div(grandparent)
+        <ul>ul(Direct parent)
+            <li>li(child)
+                <span>span(grandparent)</span>
+
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>
