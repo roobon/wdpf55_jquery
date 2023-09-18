@@ -1,16 +1,19 @@
 <?php
-$db = new mysqli("localhost", "root", "", "country");
-$id = $_POST['a'];
-// echo $id;
+if (isset($_REQUEST['slct'])) {
+    $db = new mysqli("localhost", "root", "", "country");
+    $id = $_POST['a'];
+    // echo $id;
 
-$sql = "SELECT * FROM district WHERE div_id ='$id'";
-$result = $db->query($sql);
+    $sql = "SELECT * FROM district WHERE div_id ='$id'";
+    $result = $db->query($sql);
+}
+
 ?>
 
 <div>
     <h3>District List</h3>
     <form action="">
-        <select name="" id="">
+        <select name="slct" id="">
 
             <option value="">Select One</option>
 

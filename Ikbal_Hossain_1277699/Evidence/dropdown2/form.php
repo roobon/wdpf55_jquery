@@ -36,7 +36,6 @@
 
     </form> <br> <br>
 
-
     <div id="display"></div>
 
     <script>
