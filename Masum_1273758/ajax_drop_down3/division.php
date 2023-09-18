@@ -16,7 +16,7 @@
 <body>
     <form action="">
         <?php
-        $myDB = new mysqli("localhost","root","","division");
+        $myDB = new mysqli("localhost","root","","division1");
         
         $sql = "SELECT * FROM division ";
         $result= $myDB->query($sql);
