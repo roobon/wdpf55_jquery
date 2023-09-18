@@ -23,16 +23,19 @@
             <option value="<?php echo $row['ID'] ?>"><?php echo $row['Name'] ?></option>
             <?php endwhile; ?>
         </select>
+
+        <div>
+        <h3>District List</h3>
+        <form action="">
+            <select name="" id="district">
+                <option value="">select one</option>
+            </select>
+        </form>
+    </div>
         
     </form>
     </div>
-    <div class="container">
-    <h3>District List</h3>
-    <form action="">
-        <select name="" id="district">
-            <option value="">select one</option>
-        </select>
-    </form>
+    
     <script>
         $(document).ready(function(){
             $("#divid").change(function(){
