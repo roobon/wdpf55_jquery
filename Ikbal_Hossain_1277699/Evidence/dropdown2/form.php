@@ -21,7 +21,7 @@
     $result = $db->query($sql);
 
     ?>
-    <h3>District Name</h3>
+    <h3>Division List</h3>
     <form action="">
         <select name="" id="divisionId">
             <option value="">Select One </option>
@@ -34,17 +34,17 @@
 
         </select>
 
-    </form>
+    </form> <br> <br>
 
-    <div id="display"> </div>
+    <div id="display"></div>
 
     <script>
-        $(function(){
-            $("#divisionId").change(function(){
+        $(function() {
+            $("#divisionId").change(function() {
                 var division_id = $("#divisionId").val();
                 // alert($("#divisionId").val());
-                $.post("district.php" , {div_id:division_id}, function(data, status){ // three parameter url, data, call back function
-                    (".display").html(data)
+                $.post("district.php", {a: division_id}, function(data, status) { // three parameter url, data, call back function
+                    $("#display").html(data)
                 });
             });
         });

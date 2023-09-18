@@ -2,7 +2,7 @@
     $server_name = "localhost";
     $user_name = "root";
     $password = "";
-    $database_name = "idb-bisew";
+    $database_name = "jquery_sample";
 
     $db = new mysqli($server_name, $user_name, $password, $database_name);
 
@@ -10,7 +10,7 @@
     $p = $_POST['p'];
     $p1 = sha1($p);
 
-    $sql = "SELECT * FROM users WHERE student_email='$e' AND student_password='$p1'";
+    $sql = "SELECT * FROM users WHERE user_email='$e' AND user_password='$p1'";
     $result = $db->query($sql);
 
     //echo $result->num_rows; => check where if match then it will show 1 otherwise 0
