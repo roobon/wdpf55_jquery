@@ -15,18 +15,15 @@
     <form action="">
         <select name="" id="divison">
             <option value="">Select One</option>
-        
-    
-    <?php 
-        $result = $db->query("SELECT * FROM divison");
-        while($row = $result->fetch_assoc()):
-    ?>
-    <option value="<?php echo $row["id"]?>"><?php echo $row["name"]?></option>
-    <?php endwhile?>
-    </select>
-    </form>
-    
 
+            <?php 
+            $result = $db->query("SELECT * FROM divison");
+            while($row = $result->fetch_assoc()):
+            ?>
+            <option value="<?php echo $row['id']?>"><?php echo $row['name']?></option>
+            <?php endwhile?>
+        </select>
+    </form>
 
     <select id="display">
         <option value="">Select One</option>
