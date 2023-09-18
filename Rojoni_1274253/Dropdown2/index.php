@@ -4,7 +4,7 @@
     $password= "";
     $database_name= "division_district";
     
-    $db= new mysqli($server_name , $user_name , $password , $database_name); 
+    $db = new mysqli($server_name , $user_name , $password , $database_name); 
     ?>
 
 <!DOCTYPE html>

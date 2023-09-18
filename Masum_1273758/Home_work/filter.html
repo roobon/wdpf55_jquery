@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").filter(".intro").css({"background-color":"yellow","color":"green"})
+        })
+    </script>
+
+</head>
+<body>
+    <div>
+        <p>This is first paragraph div.</p>
+        <p>This is another pragraph div.</p>
+    </div>
+    <div>
+        <p>
+            this is second pragraph div. </p>
+
+        <p>This is another pragraph div.</p>
+    </div>
+   
+        <p class="intro">
+            this is second pragraph div. </p>
+
+        <p class="intro">This is another pragraph div.</p>
+    
+</body>
+</html>
