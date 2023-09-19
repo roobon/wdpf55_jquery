@@ -1,12 +1,12 @@
 <?php
-if (isset($_REQUEST['slct'])) {
+
     $db = new mysqli("localhost", "root", "", "wdpf55_jquery");
     $id = $_POST['a'];
     // echo $id;
 
     $sql = "SELECT * FROM district WHERE div_id ='$id'";
     $result = $db->query($sql);
-}
+
 
 ?>
 
