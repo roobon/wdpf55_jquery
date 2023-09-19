@@ -15,7 +15,7 @@
     // $password = "";
     // $database = "country";
 
-    $db = new mysqli("localhost", "root", "", "country");
+    $db = new mysqli("localhost", "root", "", "wdpf55_jquery");
 
     $sql = "SELECT * FROM division";
     $result = $db->query($sql);

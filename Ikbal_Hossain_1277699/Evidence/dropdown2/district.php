@@ -1,6 +1,6 @@
 <?php
 if (isset($_REQUEST['slct'])) {
-    $db = new mysqli("localhost", "root", "", "country");
+    $db = new mysqli("localhost", "root", "", "wdpf55_jquery");
     $id = $_POST['a'];
     // echo $id;
 
