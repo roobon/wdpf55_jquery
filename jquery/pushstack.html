@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>
+		JQuery pushStack() method
+	</title>
+
+	<script src=
+"https://code.jquery.com/jquery-3.5.0.js">
+	</script>
+</head>
+
+<body style="text-align:center;">
+
+	<h1 style="color:green;">GeeksForGeeks</h1>
+	
+	<p>JQuery | pushStack() method</p>
+	<div>This is div</div>
+    <div>This is another div element</div>
+	<br>
+
+	<button onclick="Geeks()">Click here</button>
+	<p id="GFG"></p>
+
+	<script>
+		var el_down = document.getElementById("GFG");
+
+		function Geeks() {
+			jQuery([]).pushStack(
+				document.getElementsByTagName("div"))
+				.remove();
+
+			el_down.innerHTML
+				= "The DOM element <div> has "
+					+ "been pushed to stack and then"
+					+ " removed.";
+		}
+	</script>
+</body>
+
+</html>
