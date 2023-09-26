@@ -14,7 +14,7 @@
     <h2>Divison List</h2>
     <form action="">
         <select name="" id="divison">
-            <option value="">Select</option>
+            <option value="">Select One</option>
         
     
     <?php 
