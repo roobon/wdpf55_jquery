@@ -1,0 +1,34 @@
+================================    WP theme development    ============================
+
+* https://developer.wordpress.org/
+* https://codex.wordpress.org/
+*https://appsero.com/wordpress/wordpress-cheat-sheet-for-developers/
+
+
+
+1. turn on debug mode			= https://developer.wordpress.org/themes/getting-started/setting-up-a-development-environment/
+
+2. create a folder on themes folder and create index.php, style.css
+
+3. copy any theme's style.css theme comment part into your theme.
+
+4. insert screenshot theme image
+
+5. setup index.php from 		= https://codex.wordpress.org/Theme_Development
+
+6. 
+
+
+nadiatrisha68@gmail.com
+
+
+
+
+
+
+========================== functions ======================
+1. 
+
+
+
+

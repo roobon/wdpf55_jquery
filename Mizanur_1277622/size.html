@@ -1,0 +1,44 @@
+<html>
+
+<head>
+	<style>
+		body {
+			cursor: pointer;
+			min-height: 100px;
+		}
+		
+		div {
+			width: 50px;
+			height: 30px;
+			margin: 5px;
+			float: left;
+			background: green;
+		}
+		
+		span {
+			color: black;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <p>This it paragraph 1</p>
+    <p>This it paragraph 2</p>
+
+	<script>
+        $(document).ready(function(){
+            var n = $("p").size();
+                alert(n)
+        });
+	</script>
+
+</body>
+
+</html>

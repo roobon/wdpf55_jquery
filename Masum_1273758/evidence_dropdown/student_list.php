@@ -11,8 +11,8 @@ echo "<table border='2'>";
 echo "<tr><th>ID</th><th>Name</th><th>Email</th><th>Gender</th><th>Address</th><th>Mobile</th></tr>";
 while($row=$result->fetch_object()){?>
 <tr>
-    <td><?php echo $row->id ?></td>
-    <td><?php echo $row->name ?></td>
+    <td><?php echo $row->Id  ?></td>
+    <td><?php echo $row->Name ?></td>
     <td><?php echo $row->Email ?></td>
     <td><?php echo $row->Gender?></td>
     <td><?php echo $row->adress ?></td>
