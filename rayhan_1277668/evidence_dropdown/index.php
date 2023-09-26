@@ -20,6 +20,7 @@ $db = new mysqli("localhost", "root", "", "student_batches");
 
 <body>
     <h3> Batch wise Students </h3>
+    
     <form action="">
         <select id="batch_id">
             <option value="">select One</option>
