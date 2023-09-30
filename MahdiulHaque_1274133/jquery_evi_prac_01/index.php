@@ -19,8 +19,8 @@
     <h2>Login Form</h2>
     <div class="message"></div>
     <form action="">
-        <input type="email" name="email" id="email" placeholder="Enter Your Email"><br>
-        <input type="password" name="password" id="password" placeholder="Enter Your Password"><br>
+        Email : <input type="email" name="email" id="email" placeholder="Enter Your Email"><br><br>
+        Password : <input type="password" name="password" id="password" placeholder="Enter Your Password"><br>
         <button type="button" id="btnLogin">Login</button>
 
     </form>
