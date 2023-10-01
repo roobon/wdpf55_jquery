@@ -1,0 +1,46 @@
+.tshirt_img {
+    height: 200px;
+    width: 200px;
+    border-radius: 30px;
+}
+
+.home_container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    
+    
+}
+
+.tshirt_container {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 10px;
+}
+
+.tshirt_card {
+   border: 3px solid rgba(248, 190, 248, 0.926);
+   padding: 10px;
+   text-align: center;
+}
+
+.tshirt_card:hover {
+    background-color: rgba(248, 190, 248, 0.615);
+    color: black;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+.bordered {
+    border: 2px solid lightblue;
+}
+
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: rgba(255, 0, 0, 0.608);
+}
