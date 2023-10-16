@@ -38,7 +38,7 @@ $db = new mysqli($server_name, $user_name, $password, $database_name);
     <script>
         $(function() {
             $("#batchId").change(function() {
-                var batchId
+                var batchId = 
                 $.post("student_list.php", {}, function(data, status) {
                     $("#studentList").html(data);
                 });

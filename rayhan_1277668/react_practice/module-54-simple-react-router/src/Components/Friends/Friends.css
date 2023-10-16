@@ -1,0 +1,12 @@
+.friend_div{
+        border: 2px solid goldenrod;
+        margin: 10px;   
+        
+        
+}
+
+.friend {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
