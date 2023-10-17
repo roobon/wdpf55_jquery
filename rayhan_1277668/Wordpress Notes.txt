@@ -18,16 +18,86 @@
 
 6. 
 
+7. custom slider			= https://barn2.com/blog/custom-wordpress-post-types 
 
-nadiatrisha68@gmail.com
+8. custom search form 			= https://nicolaslule.com/how-to-customize-the-search-form-in-wordpress/
+
+9. user role editor (plugin)	 	= used for user role accessibilities. 
+
+10. Duplicator (plugin)			= used for migration wordpress.
+
+* page.php = static every page 
+* single.php = post gular details page
+*** Multi site ***	= admin can create multiple user through sub directory with network tools.
+
+
+
+* get_stylesheet_uri()					= get css 
+* echo get_template_directory_uri()			= get location/ uri 
+* php  get_header() 					= get header file
+* get_sidebar()						= get sidebar 
+* get_footer()						= get footer
+* language_attributes()					= lang attribute
+* bloginfo("charset")					= set charset UTF-8
+* bloginfo("title")					= set title 
+
+* wp_head() 						= set head / plugin styles dynamically
+</head>
+
+* wp_footer()						= set js dynamically						
+</body>
+
+* setting > reading > default / latest post
+
+* 
+                    <?php   if( have_posts()) : 
+                            while ( have_posts() ) :
+                            the_post();     
+                        ?>
+
+			<article> 
+
+		* the_post_thumbnail()								= get post thubmnail
+		* <a href=" <?php  echo the_permalink() ?> "> <?php  echo the_title() ?> </a>	= get title
+
+			</article>
+
+
+		 <?php 
+                endwhile ;
+                endif; 
+                    ?>
+
+
+* the_date('j') 			= get date
+*  echo get_the_date('M')		= get month
 
 
 
 
 
 
-========================== functions ======================
-1. 
+
+======================== migration plugin tools ================
+all in one, updraft plus, duplicator
+
+
+
+========================= Themes ===============
+astra , FSE Business Blocks, Next Business, Raft, 
+
+
+
+===================================== Domain Hosting ===================================
+1. what is A record ( in hosting ) 
+
+2. 
+
+
+
+
+
+
 
 
 

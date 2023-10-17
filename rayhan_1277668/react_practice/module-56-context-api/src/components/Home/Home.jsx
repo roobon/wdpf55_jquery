@@ -7,8 +7,6 @@ import toast from 'react-hot-toast';
 
 
 
-
-
 const Home = () => {
 
     const tshirts = useLoaderData();
