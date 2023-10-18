@@ -5,7 +5,7 @@
             <div class="featured-title-inner-wrap">
                 <div class="featured-title-heading-wrap">
                     <h1 class="featured-title-heading">
-                     
+                        <?php wp_title()  ?>
                     </h1>
                 </div>
                 <div id="breadcrumbs">
@@ -13,7 +13,7 @@
                         <div class="breadcrumb-trail">
                             <a href="home.html" class="trail-begin">Home</a>
                             <span class="sep"><i class="finance-icon-chevron-right"></i></span>
-                            <span class="trail-end">News</span>
+                            <span class="trail-end"><?php wp_title() ?> </span>
                         </div>
                     </div>
                 </div>
@@ -38,9 +38,8 @@
                            <a href=" <?php the_permalink() ?> ">  <?php  the_post_thumbnail() ?> </a>
                             
                         </div><!-- /.post-media -->
-
+                        <?php  the_content() ?>
                         <div class="post-content-wrap">
-                         
                             <h2 class="post-title">
         <span class="post-title-inner">
             <a href=" <?php  echo the_permalink() ?> "> <?php  echo the_title() ?> </a>
@@ -77,24 +76,24 @@
                             </div><!-- /.post-meta -->
 
                             <div class="post-content post-excerpt">
-                            <?php  the_excerpt() ?>
-                           
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis, felis at lobortis vestibulum, eros neque malesuada diam, vel varius nulla dolor quis urna. Vivamus a consectetur enim, id tristique risus. Phasellus mi justo, tincidunt at porttitor ornare, porta sed elit. Sed neque ligula, ullamcorper sed imperdiet ut, suscipit ut quam. Praesent ut purus quis magna facilisis porttitor. Etiam interdum nibh ligula, ut molestie velit efficitur eu. Cras in augue tempor, ultricies nunc laoreet, dapibus velit. Nunc vel pharetra nisl. Cras fringilla velit odio, id semper enim placerat id.</p>
+                            </div><!-- /.post-excerpt -->
 
-                            <div class="post-read-more">
-                                <div class="post-link">
-                                    <a href="page-blog-single.html">Read More</a>
-                                </div>
-                            </div><!-- /.post-read-more -->
+                           
                         </div><!-- /.post-content-wrap -->
                         <div class="border-bottom-1px padding-top-33"></div>
+
                     </article>
                     
+              
+
                     <?php 
                 endwhile ;
                 endif; 
                     ?>
-                    
-
+                <?php comments_template(); ?> 
+    
+                
                     <div class="themesflat-pagination padding-left-70 clearfix">
                         <ul class="page-numbers">
                             <li><a class="prev page-numbers" href="#"><span class=" finance-icon-cheveron-left"></span></a></li>

@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" 
-
-lang="<?php language_attributes() ?>"><!--<![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="<?php language_attributes() ?>"><!--<![endif]-->
 
 <head>
     <!-- Basic Page Needs -->
     <meta charset="<?php bloginfo("charset") ?>">
-    
+
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>  <?php  bloginfo("title") ?> </title>
+    <title> <?php bloginfo("title") ?> </title>
 
     <meta name="author" content="themesflat.com">
 
@@ -22,7 +20,7 @@ lang="<?php language_attributes() ?>"><!--<![endif]-->
 
 
     <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="assets/icon/favicon.png">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/assets/icon/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri() ?>/ assets/icon/apple-touch-icon-158-precomposed.png">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -79,13 +77,13 @@ lang="<?php language_attributes() ?>"><!--<![endif]-->
                         <div class="wrap-inner">
                             <div id="site-logo" class="clearfix">
                                 <div id="site-logo-inner">
-                                    <a href="home.html" title="Finance" rel="home" class="main-logo"><img src=" <?php echo get_template_directory_uri() ?>/assets/img/logo.png" width="184" height="40" alt="Finance" data-retina="assets/img/logo@2x.png" data-width="184" data-height="40"></a>
+                                    <a href=" <?php echo get_home_url()  ?>  " title="Finance" rel="home" class="main-logo"><img src=" <?php echo get_template_directory_uri() ?>/assets/img/logo.png" width="184" height="40" alt="Finance" data-retina="assets/img/logo@2x.png" data-width="184" data-height="40"></a>
                                 </div>
                             </div><!-- /#site-logo -->
 
                             <div class="mobile-button"><span></span></div><!-- //mobile menu button -->
-
-                            <nav id="main-nav" class="main-nav">
+                            
+                            <!-- <nav id="main-nav" class="main-nav">
                                 <ul id="menu-primary-menu" class="menu">
                                     <li class="menu-item current-menu-item menu-item-has-children"><a href="home.html">HOME</a>
                                         <ul class="sub-menu">
@@ -192,7 +190,28 @@ lang="<?php language_attributes() ?>"><!--<![endif]-->
                                         </ul>
                                     </li>
                                 </ul>
-                            </nav><!-- /#main-nav -->
+                            </nav> -->
+
+<?php
+wp_nav_menu( array(
+    'menu'                => "Main menu", // (int|string|WP_Term) Desired menu. Accepts a menu ID, slug, name, or object.
+    'menu_class'        => "menu", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
+    'menu_id'            => "menu-primary-menu", // (string) The ID that is applied to the ul element which forms the menu. Default is the menu slug, incremented.
+    'container'            => "nav", // (string) Whether to wrap the ul, and what to wrap it with. Default 'div'.
+    'container_class'    => "main-nav", // (string) Class that is applied to the container. Default 'menu-{menu slug}-container'.
+    'container_id'        => "main-nav", // (string) The ID that is applied to the container.
+    // 'fallback_cb'        => "", // (callable|bool) If the menu doesn't exists, a callback function will fire. Default is 'wp_page_menu'. Set to false for no fallback.
+    // 'before'            => "", // (string) Text before the link markup.
+    // 'after'                => "", // (string) Text after the link markup.
+    // 'link_before'        => "", // (string) Text before the link text.
+    // 'link_after'        => "", // (string) Text after the link text.
+    // 'echo'                => "", // (bool) Whether to echo the menu or return it. Default true.
+    // 'depth'                => "", // (int) How many levels of the hierarchy are to be included. 0 means all. Default 0.
+    // 'walker'            => "", // (object) Instance of a custom walker class.
+    'theme_location'    => "main_menu", // (string) Theme location to be used. Must be registered with register_nav_menu() in order to be 
+));
+
+?>
 
                             <ul class="nav-extend active">
                                 <li class="ext c">
