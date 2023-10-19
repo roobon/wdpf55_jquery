@@ -1,21 +1,21 @@
-    <?php  get_header("home") ?>
+    <?php get_header("home") ?>
 
-<?php 
- 
-/* 
+    <?php
+
+    /* 
     Template Name: home_template
 
 */
 
 
-?>
+    ?>
     <!-- Main Content -->
     <div id="main-content" class="site-main clearfix">
         <div id="content-wrap">
             <div id="site-content" class="site-content clearfix">
                 <div id="inner-content" class="inner-content-wrap">
                     <div class="page-content">
-                        
+
                         <!-- SLIDER -->
                         <div class="rev_slider_wrapper fullwidthbanner-container">
                             <div id="rev-slider1" class="rev_slider fullwidthabanner">
@@ -24,81 +24,21 @@
                                     <li data-transition="random">
                                         <!-- Main Image -->
                                         <img src=" <?php echo get_template_directory_uri() ?>/assets/img/slider/slider-bg-1.jpg" alt="" data-bgposition="center center" data-no-retina>
-                                       
+
                                         <!-- Layers -->
-                                        <div class="tp-caption tp-resizeme text-white font-heading font-weight-700"
-                                            data-x="['left','left','left','center']" data-hoffset="['-5','-5','0','0']"
-                                            data-y="['middle','middle','middle','middle']" data-voffset="['-12','-12','-12','-30']"
-                                            data-fontsize="['52','52','50','28']"
-                                            data-lineheight="['66','66','60','35']"
-                                            data-width="full"
-                                            data-height="none"
-                                            data-whitespace="normal"
-                                            data-transform_idle="o:1;"
-                                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                            data-mask_in="x:0px;y:[100%];" 
-                                            data-mask_out="x:inherit;y:inherit;" 
-                                            data-start="700" 
-                                            data-splitin="none" 
-                                            data-splitout="none" 
-                                            data-responsive_offset="on">
+                                        <div class="tp-caption tp-resizeme text-white font-heading font-weight-700" data-x="['left','left','left','center']" data-hoffset="['-5','-5','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-12','-12','-12','-30']" data-fontsize="['52','52','50','28']" data-lineheight="['66','66','60','35']" data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="700" data-splitin="none" data-splitout="none" data-responsive_offset="on">
                                             30 YEARS PROVIDING<br>FINANCIAL SERVICES
                                         </div>
 
-                                        <div class="tp-caption sub-title text-white"
-                                            data-x="['left','left','left','center']" data-hoffset="['-5','-5','0','0']"
-                                            data-y="['middle','middle','middle','middle']" data-voffset="['104','104','95','57']"
-                                            data-fontsize="['20','20','18','16']"
-                                            data-lineheight="['34','34','34','25']"
-                                            data-width="full"
-                                            data-height="none"
-                                            data-whitespace="normal"
-                                            data-transform_idle="o:1;"
-                                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                                            data-mask_in="x:0px;y:[100%];" 
-                                            data-mask_out="x:inherit;y:inherit;" 
-                                            data-start="1000" 
-                                            data-splitin="none" 
-                                            data-splitout="none" 
-                                            data-responsive_offset="on">
+                                        <div class="tp-caption sub-title text-white" data-x="['left','left','left','center']" data-hoffset="['-5','-5','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['104','104','95','57']" data-fontsize="['20','20','18','16']" data-lineheight="['34','34','34','25']" data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
                                             Appropriate and sufficient financing for<br>a company is crucially important for its long-term success.
                                         </div>
 
-                                        <div class="tp-caption"
-                                            data-x="['left','left','left','center']" data-hoffset="['-5','-5','0','0']"
-                                            data-y="['middle','middle','middle','middle']" data-voffset="['193','193','180','145']"
-                                            data-width="full"
-                                            data-height="none"
-                                            data-whitespace="normal"
-                                            data-transform_idle="o:1;"
-                                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                            data-mask_in="x:0px;y:[100%];" 
-                                            data-mask_out="x:inherit;y:inherit;" 
-                                            data-start="1000" 
-                                            data-splitin="none" 
-                                            data-splitout="none" 
-                                            data-responsive_offset="on">
-                                            <a href="page-contact.html" class="themesflat-button accent big video"><img src=" <?php echo get_template_directory_uri()?>/assets/img/watch-video.png" alt="Image">WATCH VIDEO</a>
+                                        <div class="tp-caption" data-x="['left','left','left','center']" data-hoffset="['-5','-5','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['193','193','180','145']" data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                                            <a href="page-contact.html" class="themesflat-button accent big video"><img src=" <?php echo get_template_directory_uri() ?>/assets/img/watch-video.png" alt="Image">WATCH VIDEO</a>
                                         </div>
 
-                                        <div class="tp-caption"
-                                            data-x="['left','left','left','center']" data-hoffset="['212','212','185','170']"
-                                            data-y="['middle','middle','middle','middle']" data-voffset="['193','193','180','145']"
-                                            data-width="full"
-                                            data-height="none"
-                                            data-whitespace="normal"
-                                            data-transform_idle="o:1;"
-                                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                            data-mask_in="x:0px;y:[100%];" 
-                                            data-mask_out="x:inherit;y:inherit;" 
-                                            data-start="1000" 
-                                            data-splitin="none" 
-                                            data-splitout="none" 
-                                            data-responsive_offset="on">
+                                        <div class="tp-caption" data-x="['left','left','left','center']" data-hoffset="['212','212','185','170']" data-y="['middle','middle','middle','middle']" data-voffset="['193','193','180','145']" data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
                                             <a href="page-contact.html" class="themesflat-button accent big video"><i class="flat-icon-check-1 font-size-25"></i>LEARN MORE</a>
                                         </div>
                                     </li>
@@ -108,81 +48,21 @@
                                     <li data-transition="random">
                                         <!-- Main Image -->
                                         <img src=" <?php echo get_template_directory_uri() ?>/assets/img/slider/slider-bg-3.jpg" alt="" data-bgposition="center center" data-no-retina>
-                                       
+
                                         <!-- Layers -->
-                                        <div class="tp-caption tp-resizeme text-white font-heading font-weight-700 text-center"
-                                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                                            data-y="['middle','middle','middle','middle']" data-voffset="['-12','-12','-12','-30']"
-                                            data-fontsize="['64','64','50','28']"
-                                            data-lineheight="['66','66','60','35']"
-                                            data-width="full"
-                                            data-height="none"
-                                            data-whitespace="normal"
-                                            data-transform_idle="o:1;"
-                                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                                            data-mask_in="x:0px;y:[100%];" 
-                                            data-mask_out="x:inherit;y:inherit;" 
-                                            data-start="1000" 
-                                            data-splitin="none" 
-                                            data-splitout="none" 
-                                            data-responsive_offset="on">
+                                        <div class="tp-caption tp-resizeme text-white font-heading font-weight-700 text-center" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-12','-12','-12','-30']" data-fontsize="['64','64','50','28']" data-lineheight="['66','66','60','35']" data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
                                             FULLY INDEPENDENT
                                         </div>
 
-                                        <div class="tp-caption tp-resizeme text-white text-center"
-                                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                                            data-y="['middle','middle','middle','middle']" data-voffset="['104','104','95','57']"
-                                            data-fontsize="['18','18','18','16']"
-                                            data-lineheight="['34','34','34','25']"
-                                            data-width="full"
-                                            data-height="none"
-                                            data-whitespace="normal"
-                                            data-transform_idle="o:1;"
-                                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                            data-mask_in="x:0px;y:[100%];" 
-                                            data-mask_out="x:inherit;y:inherit;" 
-                                            data-start="1000" 
-                                            data-splitin="none" 
-                                            data-splitout="none" 
-                                            data-responsive_offset="on">
-                                             We're not beholden to any corporate agenda—our focus is your success<br>and clients enjoy direct access to the firm's owners.
+                                        <div class="tp-caption tp-resizeme text-white text-center" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['104','104','95','57']" data-fontsize="['18','18','18','16']" data-lineheight="['34','34','34','25']" data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                                            We're not beholden to any corporate agenda—our focus is your success<br>and clients enjoy direct access to the firm's owners.
                                         </div>
 
-                                        <div class="tp-caption text-center"
-                                            data-x="['center','center','center','center']" data-hoffset="['-110','-110','-90','-85']"
-                                            data-y="['middle','middle','middle','middle']" data-voffset="['203','203','203','140']"
-                                            data-width="250"
-                                            data-height="none"
-                                            data-whitespace="normal"
-                                            data-transform_idle="o:1;"
-                                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                            data-mask_in="x:0px;y:[100%];" 
-                                            data-mask_out="x:inherit;y:inherit;" 
-                                            data-start="1000" 
-                                            data-splitin="none" 
-                                            data-splitout="none" 
-                                            data-responsive_offset="on">
+                                        <div class="tp-caption text-center" data-x="['center','center','center','center']" data-hoffset="['-110','-110','-90','-85']" data-y="['middle','middle','middle','middle']" data-voffset="['203','203','203','140']" data-width="250" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
                                             <a href="page-contact.html" class="themesflat-button accent big video"><img src=" <?php echo get_template_directory_uri() ?>/assets/img/watch-video.png" alt="Image">WATCH VIDEO</a>
                                         </div>
 
-                                        <div class="tp-caption text-center"
-                                            data-x="['center','center','center','center']" data-hoffset="['104','104','90','85']"
-                                            data-y="['middle','middle','middle','middle']" data-voffset="['203','203','203','140']"
-                                            data-width="250"
-                                            data-height="none"
-                                            data-whitespace="normal"
-                                            data-transform_idle="o:1;"
-                                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                            data-mask_in="x:0px;y:[100%];" 
-                                            data-mask_out="x:inherit;y:inherit;" 
-                                            data-start="1000" 
-                                            data-splitin="none" 
-                                            data-splitout="none" 
-                                            data-responsive_offset="on">
+                                        <div class="tp-caption text-center" data-x="['center','center','center','center']" data-hoffset="['104','104','90','85']" data-y="['middle','middle','middle','middle']" data-voffset="['203','203','203','140']" data-width="250" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
                                             <a href="page-contact.html" class="themesflat-button white big video"><i class="flat-icon-check-1 font-size-25"></i>LEARN MORE</a>
                                         </div>
                                     </li>
@@ -191,83 +71,23 @@
                                     <!-- Slide 3 -->
                                     <li data-transition="random">
                                         <!-- Main Image -->
-                                        <img src=" <?php echo get_template_directory_uri()?>/assets/img/slider/slider-bg-4.jpg" alt="" data-bgposition="center center" data-no-retina>
-                                       
-                                       <!-- Layers -->
-                                        <div class="tp-caption tp-resizeme text-white font-heading font-weight-700 text-right"
-                                            data-x="['right','right','right','right']" data-hoffset="['-5','-5','0','0']"
-                                            data-y="['middle','middle','middle','middle']" data-voffset="['-12','-12','-12','-30']"
-                                            data-fontsize="['52','52','50','28']"
-                                            data-lineheight="['66','66','60','35']"
-                                            data-width="full"
-                                            data-height="none"
-                                            data-whitespace="normal"
-                                            data-transform_idle="o:1;"
-                                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                            data-mask_in="x:0px;y:[100%];" 
-                                            data-mask_out="x:inherit;y:inherit;" 
-                                            data-start="700" 
-                                            data-splitin="none" 
-                                            data-splitout="none" 
-                                            data-responsive_offset="on">
+                                        <img src=" <?php echo get_template_directory_uri() ?>/assets/img/slider/slider-bg-4.jpg" alt="" data-bgposition="center center" data-no-retina>
+
+                                        <!-- Layers -->
+                                        <div class="tp-caption tp-resizeme text-white font-heading font-weight-700 text-right" data-x="['right','right','right','right']" data-hoffset="['-5','-5','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-12','-12','-12','-30']" data-fontsize="['52','52','50','28']" data-lineheight="['66','66','60','35']" data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="700" data-splitin="none" data-splitout="none" data-responsive_offset="on">
                                             30 YEARS PROVIDING<br>FINANCIAL SERVICES
                                         </div>
 
-                                        <div class="tp-caption sub-title text-white text-right"
-                                            data-x="['right','right','right','right']" data-hoffset="['-5','-5','0','0']"
-                                            data-y="['middle','middle','middle','middle']" data-voffset="['104','104','104','57']"
-                                            data-fontsize="['20','20','18','16']"
-                                            data-lineheight="['34','34','34','25']"
-                                            data-width="full"
-                                            data-height="none"
-                                            data-whitespace="normal"
-                                            data-transform_idle="o:1;"
-                                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                                            data-mask_in="x:0px;y:[100%];" 
-                                            data-mask_out="x:inherit;y:inherit;" 
-                                            data-start="1000" 
-                                            data-splitin="none" 
-                                            data-splitout="none" 
-                                            data-responsive_offset="on">
+                                        <div class="tp-caption sub-title text-white text-right" data-x="['right','right','right','right']" data-hoffset="['-5','-5','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['104','104','104','57']" data-fontsize="['20','20','18','16']" data-lineheight="['34','34','34','25']" data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
                                             Appropriate and sufficient financing for<br>a company is crucially important for its long-term success.
                                         </div>
 
-                                        <div class="tp-caption text-right"
-                                            data-x="['right','right','right','right']" data-hoffset="['-5','-5','0','0']"
-                                            data-y="['middle','middle','middle','middle']" data-voffset="['193','193','193','140']"
-                                            data-width="full"
-                                            data-height="none"
-                                            data-whitespace="normal"
-                                            data-transform_idle="o:1;"
-                                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                            data-mask_in="x:0px;y:[100%];" 
-                                            data-mask_out="x:inherit;y:inherit;" 
-                                            data-start="1000" 
-                                            data-splitin="none" 
-                                            data-splitout="none" 
-                                            data-responsive_offset="on">
+                                        <div class="tp-caption text-right" data-x="['right','right','right','right']" data-hoffset="['-5','-5','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['193','193','193','140']" data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
                                             <a href="page-contact.html" class="themesflat-button accent big video"><i class="flat-icon-check-1 font-size-25"></i>LEARN MORE</a>
                                         </div>
 
-                                        <div class="tp-caption text-right"
-                                            data-x="['right','right','right','right']" data-hoffset="['212','212','180','165']"
-                                            data-y="['middle','middle','middle','middle']" data-voffset="['193','193','193','140']"
-                                            data-width="full"
-                                            data-height="none"
-                                            data-whitespace="normal"
-                                            data-transform_idle="o:1;"
-                                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                            data-mask_in="x:0px;y:[100%];" 
-                                            data-mask_out="x:inherit;y:inherit;" 
-                                            data-start="1000" 
-                                            data-splitin="none" 
-                                            data-splitout="none" 
-                                            data-responsive_offset="on">
-                                            <a href="page-contact.html" class="themesflat-button accent big video"><img src=" <?php echo get_template_directory_uri()?>/assets/img/watch-video.png" alt="Image">WATCH VIDEO</a>                                            
+                                        <div class="tp-caption text-right" data-x="['right','right','right','right']" data-hoffset="['212','212','180','165']" data-y="['middle','middle','middle','middle']" data-voffset="['193','193','193','140']" data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                                            <a href="page-contact.html" class="themesflat-button accent big video"><img src=" <?php echo get_template_directory_uri() ?>/assets/img/watch-video.png" alt="Image">WATCH VIDEO</a>
                                         </div>
                                     </li>
                                     <!-- /End Slide 3 -->
@@ -306,7 +126,7 @@
 
                                     <div class="col-md-4 border-right-1 border-left-1 border-top-1 border-bottom-1 dark">
                                         <div class="themesflat-icon-box clearfix text-center has-width padding-top-50 padding-right-20 padding-bottom-57 padding-left-25">
-                                             <div class="icon-wrap icon-image">
+                                            <div class="icon-wrap icon-image">
                                                 <img src=" <?php echo get_template_directory_uri() ?>/assets/img/iconbox/img-iconbox2.png" alt="Image">
                                             </div>
 
@@ -346,14 +166,14 @@
 
                         <!-- ACCORDIONS -->
                         <div class="row-accordions bg-light-grey">
-                            <div class="container">                                
-                                <div class="row equalize sm-equalize-auto">                                   
-                                    <div class="col-md-5"> 
-                                         <div class="themesflat-spacer clearfix" data-desktop="0" data-mobi="60" data-smobi="60"></div>
-                                        
+                            <div class="container">
+                                <div class="row equalize sm-equalize-auto">
+                                    <div class="col-md-5">
+                                        <div class="themesflat-spacer clearfix" data-desktop="0" data-mobi="60" data-smobi="60"></div>
+
                                         <div class="img-single margin-top--60">
                                             <img src=" <?php echo get_template_directory_uri() ?>/assets/img/img-single/img-single2.png" alt="Image">
-                                        </div> 
+                                        </div>
                                     </div><!-- /.col-md-6 -->
 
                                     <div class="col-md-7">
@@ -371,7 +191,7 @@
                                                 <h3 class="accordion-heading"><span class="inner">WE HAVE A WIDE BREADTH OF EXPERIENCE OVER 30 YEARS</span></h3>
 
                                                 <div class="accordion-content">
-                                                    <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod tincid  unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat </div>
+                                                    <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod tincid unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat </div>
                                                 </div>
                                             </div><!-- /.accordion-item -->
 
@@ -379,7 +199,7 @@
                                                 <h3 class="accordion-heading"><span class="inner">WE ARE INDEPENDENT AND FREE FROM THIRD PARTY INFLUENCE</span></h3>
 
                                                 <div class="accordion-content">
-                                                    <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod tincid  unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat </div>
+                                                    <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod tincid unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat </div>
                                                 </div>
                                             </div><!-- /.accordion-item -->
 
@@ -387,7 +207,7 @@
                                                 <h3 class="accordion-heading"><span class="inner">WE HAS A PRO-ACTIVE MINDSET IN REGARDS TO CLIENT SERVICE</span></h3>
 
                                                 <div class="accordion-content">
-                                                    <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod tincid  unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat </div>
+                                                    <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod tincid unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat </div>
                                                 </div>
                                             </div><!-- /.accordion-item -->
                                         </div><!-- /.themesflat-accordions -->
@@ -413,7 +233,7 @@
                                                         <h3 class="heading mobi-padding-top20 mobi-padding-bottom20">
                                                             PROFESSIONAL HELP IN PLANNING YOUR FINANCIAL FUTURE
                                                         </h3>
-                                                        <span class="icon"><i class="as-icon-speedometer2"></i></span> 
+                                                        <span class="icon"><i class="as-icon-speedometer2"></i></span>
                                                     </div>
                                                 </div>
                                                 <div class="button-wrap">
@@ -427,7 +247,7 @@
                                 </div><!-- /.row -->
                             </div><!-- /.container -->
                         </div>
-                        <!-- END PROMOTION --> 
+                        <!-- END PROMOTION -->
 
                         <!-- SERVICES POST CAROUSEL -->
                         <div class="row-services">
@@ -447,126 +267,46 @@
 
                                     <div class="col-md-12">
                                         <div class="themesflat-news bullet-circle has-bullets" data-auto="false" data-column="3" data-column2="2" data-column3="1" data-gap="35">
-                                            <div class="owl-carousel owl-theme">
-                                                <div class="news-item style-1 text-center clearfix">
-                                                    <div class="inner">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/news/post-4.jpg" alt="Image">
-                                                            <h3 class="title bg-gradient font-size-16 padding-top-30 padding-bottom-10"><a href="page-blog-single.html">INVESTMENT LOAN</a></h3>
-                                                        </div>
-                                                        <div class="text-wrap bg-light-grey">                                                     
+<div class="owl-carousel owl-theme">
 
-                                                            <p class="excerpt-text">Loan business play a vital role in keeping your business competitive. In many cases, such measures and investments require capital</p>
+    <?php 
+    $query = new WP_Query(array(
+        'post_type'=>'services')) ;
+        
+        if ( $query->have_posts()) :
+            while ($query-> have_posts()) :
+                $query->the_post();
+    ?>
 
-                                                            <div class="post-btn">
-                                                                <a href="page-blog-single.html" class="simple-link" >READ MORE</a>
-                                                            </div>
-                                                        </div><!-- /.text-wrap -->
-                                                    </div>
-                                                </div><!-- /.news-item -->
 
-                                                <div class="news-item style-1 text-center clearfix">
-                                                    <div class="inner">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/news/post-5.jpg" alt="Image">
-                                                            <h3 class="title bg-gradient font-size-16 padding-top-30 padding-bottom-10"><a href="page-blog-single.html">Project Finance</a></h3>
-                                                        </div>
-                                                        <div class="text-wrap bg-light-grey">                                                       
 
-                                                            <p class="excerpt-text">We aim at developing and implementing customized and sustainable project financing solutions together with our clients</p>
 
-                                                            <div class="post-btn">
-                                                                <a href="page-blog-single.html" class="simple-link" >READ MORE</a>
-                                                            </div>
-                                                        </div><!-- /.text-wrap -->
-                                                    </div>
-                                                </div><!-- /.news-item -->
+<div class="news-item style-1 text-center clearfix">
+    <div class="inner">
+        <div class="thumb">
+            <?php  the_post_thumbnail() ?>
+       
+            <h3 class="title bg-gradient font-size-16 padding-top-30 padding-bottom-10"><a href=" <?php the_permalink() ?> "> <?php  the_title() ?> </a></h3>
+        </div>
+        <div class="text-wrap bg-light-grey">
 
-                                                <div class="news-item style-1 text-center clearfix">
-                                                    <div class="inner">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/news/post-6.jpg" alt="Image">
-                                                            <h3 class="title bg-gradient font-size-16 padding-top-30 padding-bottom-10"><a href="page-blog-single.html">REAL ESTATE PLANNING</a></h3>
-                                                        </div>
-                                                        <div class="text-wrap bg-light-grey">                                                        
+            <p class="excerpt-text"> <?php  short_content() ?> </p>
 
-                                                            <p class="excerpt-text">Finance focuses its services on a wide variety of financing solutions as well as for real estate project development and real estate projects.</p>
+            <div class="post-btn">
+                <a href=" <?php the_permalink() ?>  " class="simple-link">READ MORE</a>
+            </div>
+        </div>
+    </div>
+</div>
 
-                                                            <div class="post-btn">
-                                                                <a href="page-blog-single.html" class="simple-link" >READ MORE</a>
-                                                            </div>
-                                                        </div><!-- /.text-wrap -->
-                                                    </div>
-                                                </div><!-- /.news-item -->
 
-                                                <div class="news-item style-1 text-center clearfix">
-                                                    <div class="inner">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/news/post-4.jpg" alt="Image">
-                                                            <h3 class="title bg-gradient font-size-16 padding-top-30 padding-bottom-10"><a href="page-blog-single.html">INVESTMENT LOAN</a></h3>
-                                                        </div>
-                                                        <div class="text-wrap bg-light-grey">                                                     
+<?php
+endwhile;
+endif;
+?>
+</div>
 
-                                                            <p class="excerpt-text">Loan business play a vital role in keeping your business competitive. In many cases, such measures and investments require capital</p>
 
-                                                            <div class="post-btn">
-                                                                <a href="page-blog-single.html" class="simple-link" >READ MORE</a>
-                                                            </div>
-                                                        </div><!-- /.text-wrap -->
-                                                    </div>
-                                                </div><!-- /.news-item -->
-
-                                                <div class="news-item style-1 text-center clearfix">
-                                                    <div class="inner">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/news/post-5.jpg" alt="Image">
-                                                            <h3 class="title bg-gradient font-size-16 padding-top-30 padding-bottom-10"><a href="page-blog-single.html">Project Finance</a></h3>
-                                                        </div>
-                                                        <div class="text-wrap bg-light-grey">                                                       
-
-                                                            <p class="excerpt-text">We aim at developing and implementing customized and sustainable project financing solutions together with our clients</p>
-
-                                                            <div class="post-btn">
-                                                                <a href="page-blog-single.html" class="simple-link" >READ MORE</a>
-                                                            </div>
-                                                        </div><!-- /.text-wrap -->
-                                                    </div>
-                                                </div><!-- /.news-item -->
-
-                                                <div class="news-item style-1 text-center clearfix">
-                                                    <div class="inner">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/news/post-6.jpg" alt="Image">
-                                                            <h3 class="title bg-gradient font-size-16 padding-top-30 padding-bottom-10"><a href="page-blog-single.html">REAL ESTATE PLANNING</a></h3>
-                                                        </div>
-                                                        <div class="text-wrap bg-light-grey">                                                        
-
-                                                            <p class="excerpt-text">Finance focuses its services on a wide variety of financing solutions as well as for real estate project development and real estate projects.</p>
-
-                                                            <div class="post-btn">
-                                                                <a href="page-blog-single.html" class="simple-link" >READ MORE</a>
-                                                            </div>
-                                                        </div><!-- /.text-wrap -->
-                                                    </div>
-                                                </div><!-- /.news-item -->
-
-                                                <div class="news-item style-1 text-center clearfix">
-                                                    <div class="inner">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/news/post-4.jpg" alt="Image">
-                                                            <h3 class="title bg-gradient font-size-16 padding-top-30 padding-bottom-10"><a href="page-blog-single.html">INVESTMENT LOAN</a></h3>
-                                                        </div>
-                                                        <div class="text-wrap bg-light-grey">                                                     
-
-                                                            <p class="excerpt-text">Loan business play a vital role in keeping your business competitive. In many cases, such measures and investments require capital</p>
-
-                                                            <div class="post-btn">
-                                                                <a href="page-blog-single.html" class="simple-link" >READ MORE</a>
-                                                            </div>
-                                                        </div><!-- /.text-wrap -->
-                                                    </div>
-                                                </div><!-- /.news-item -->
-                                            </div>
                                         </div><!-- /.themesflat-news -->
                                     </div><!-- /.col-md-12 -->
 
@@ -576,7 +316,7 @@
                                 </div><!-- /.row -->
                             </div><!-- /.container -->
                         </div>
-                        <!-- END SERVICES POST CAROUSEL --> 
+                        <!-- END SERVICES POST CAROUSEL -->
 
                         <!-- FACTS -->
                         <div class="themesflat-row row-facts-1 parallax parallax-overlay">
@@ -588,7 +328,7 @@
                                     </div><!-- /.col-md-12 -->
 
                                     <div class="col-md-4">
-                                         <div class="themesflat-headings style-4 color-white margin-top--6 clearfix">
+                                        <div class="themesflat-headings style-4 color-white margin-top--6 clearfix">
                                             <h2 class="heading letter-spacing--2px clearfix">REQUEST A CALL BACK</h2>
                                             <div class="sep clearfix"></div>
                                             <p class="sub-heading font-size-15 line-height-26 clearfix">Talk to us today to find out how we can suggest long- and short-term strategies that will help you realize our financial dreams.</p>
@@ -603,10 +343,10 @@
                                                 </span>
                                                 <span class="wpcf7-form-control-wrap your-phone">
                                                     <input type="text" tabindex="2" id="phone" name="phone" value="" class="wpcf7-form-control" placeholder="YOUR PHONE*" required>
-                                                </span> 
+                                                </span>
                                                 <span class="wpcf7-form-control-wrap your-email">
                                                     <input type="email" tabindex="2" id="email" name="email" value="" class="wpcf7-form-control" placeholder="YOUR EMAIL *" required="">
-                                                </span>                                                
+                                                </span>
                                                 <span class="wpcf7-form-control-wrap your-select">
                                                     <select>
                                                         <option value="">BEST TIME TO CALL</option>
@@ -628,7 +368,7 @@
                                 </div><!-- /.row -->
                             </div><!-- /.container -->
                         </div>
-                        <!-- END FACTS 1 -->  
+                        <!-- END FACTS 1 -->
 
                         <!-- TESTIMONIALS -->
                         <div class="row-testimonials">
@@ -645,158 +385,160 @@
 
                                         <div class="themesflat-spacer clearfix" data-desktop="52" data-mobi="40" data-smobi="40"></div>
 
-                                        <div class="themesflat-carousel-box testimonials-s2 has-bullets bullet-circle bullet30" data-auto="true" data-loop="false" data-gap="30" data-column="2" data-column2="1" data-column3="1"><div class="owl-carousel owl-theme">
-                                            <div class="themesflat-testimonials style-4 clearfix image-circle">
-                                                <div class="item">
-                                                    <div class="inner">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/testimonials/customer-1.png" alt="Image">
+                                        <div class="themesflat-carousel-box testimonials-s2 has-bullets bullet-circle bullet30" data-auto="true" data-loop="false" data-gap="30" data-column="2" data-column2="1" data-column3="1">
+                                            <div class="owl-carousel owl-theme">
+                                                <div class="themesflat-testimonials style-4 clearfix image-circle">
+                                                    <div class="item">
+                                                        <div class="inner">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/testimonials/customer-1.png" alt="Image">
+                                                            </div>
+
+                                                            <blockquote class="text">
+                                                                <div class="start">
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                </div>
+                                                                <p>I would like to say how thankful I am for Finance Group. I have been a valued customer there for many years. They have helped me when some of the major lenders would not because of a credit score. I appreciate them so much. They gave me the opportunity to build up trust and repay my bill. I have recommended Finance Group too many of my friends and coworkers.</p>
+                                                                <div class="name-pos">
+                                                                    <h6 class="name">SABRINA BROWN</h6>
+                                                                    <span class="position">Delicates Studio</span>
+                                                                </div>
+                                                            </blockquote>
                                                         </div>
-
-                                                        <blockquote class="text">
-                                                            <div class="start">
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                            </div>
-                                                            <p>I would like to say how thankful I am for Finance Group. I have been a valued customer there for many years. They have helped me when some of the major lenders would not because of a credit score. I appreciate them so much. They gave me the opportunity to build up trust and repay my bill. I have recommended Finance Group too many of my friends and coworkers.</p>
-                                                            <div class="name-pos">
-                                                                <h6 class="name">SABRINA BROWN</h6>
-                                                                <span class="position">Delicates Studio</span>
-                                                            </div>
-                                                        </blockquote>
                                                     </div>
-                                                </div>
-                                            </div><!-- /.themesflat-testimonials -->
+                                                </div><!-- /.themesflat-testimonials -->
 
-                                            <div class="themesflat-testimonials style-4 clearfix image-circle">
-                                                <div class="item">
-                                                    <div class="inner">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/testimonials/customer-2.png" alt="Image">
+                                                <div class="themesflat-testimonials style-4 clearfix image-circle">
+                                                    <div class="item">
+                                                        <div class="inner">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/testimonials/customer-2.png" alt="Image">
+                                                            </div>
+
+                                                            <blockquote class="text">
+                                                                <div class="start">
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                </div>
+                                                                <p>I would like to say how thankful I am for Finance Group. I have been a valued customer there for many years. They have helped me when some of the major lenders would not because of a credit score. I appreciate them so much. They gave me the opportunity to build up trust and repay my bill. I have recommended Finance Group too many of my friends and coworkers.</p>
+                                                                <div class="name-pos">
+                                                                    <h6 class="name">SABRINA BROWN</h6>
+                                                                    <span class="position">Delicates Studio</span>
+                                                                </div>
+                                                            </blockquote>
                                                         </div>
-
-                                                        <blockquote class="text">
-                                                            <div class="start">
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                            </div>
-                                                            <p>I would like to say how thankful I am for Finance Group. I have been a valued customer there for many years. They have helped me when some of the major lenders would not because of a credit score. I appreciate them so much. They gave me the opportunity to build up trust and repay my bill. I have recommended Finance Group too many of my friends and coworkers.</p>
-                                                            <div class="name-pos">
-                                                                <h6 class="name">SABRINA BROWN</h6>
-                                                                <span class="position">Delicates Studio</span>
-                                                            </div>
-                                                        </blockquote>
                                                     </div>
-                                                </div>
-                                            </div><!-- /.themesflat-testimonials -->
+                                                </div><!-- /.themesflat-testimonials -->
 
-                                            <div class="themesflat-testimonials style-4 clearfix image-circle">
-                                                <div class="item">
-                                                    <div class="inner">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/testimonials/customer-1.png" alt="Image">
+                                                <div class="themesflat-testimonials style-4 clearfix image-circle">
+                                                    <div class="item">
+                                                        <div class="inner">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/testimonials/customer-1.png" alt="Image">
+                                                            </div>
+
+                                                            <blockquote class="text">
+                                                                <div class="start">
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                </div>
+                                                                <p>I would like to say how thankful I am for Finance Group. I have been a valued customer there for many years. They have helped me when some of the major lenders would not because of a credit score. I appreciate them so much. They gave me the opportunity to build up trust and repay my bill. I have recommended Finance Group too many of my friends and coworkers.</p>
+                                                                <div class="name-pos">
+                                                                    <h6 class="name">SABRINA BROWN</h6>
+                                                                    <span class="position">Delicates Studio</span>
+                                                                </div>
+                                                            </blockquote>
                                                         </div>
-
-                                                        <blockquote class="text">
-                                                            <div class="start">
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                            </div>
-                                                            <p>I would like to say how thankful I am for Finance Group. I have been a valued customer there for many years. They have helped me when some of the major lenders would not because of a credit score. I appreciate them so much. They gave me the opportunity to build up trust and repay my bill. I have recommended Finance Group too many of my friends and coworkers.</p>
-                                                            <div class="name-pos">
-                                                                <h6 class="name">SABRINA BROWN</h6>
-                                                                <span class="position">Delicates Studio</span>
-                                                            </div>
-                                                        </blockquote>
                                                     </div>
-                                                </div>
-                                            </div><!-- /.themesflat-testimonials -->
+                                                </div><!-- /.themesflat-testimonials -->
 
-                                            <div class="themesflat-testimonials style-4 clearfix image-circle">
-                                                <div class="item">
-                                                    <div class="inner">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/testimonials/customer-2.png" alt="Image">
+                                                <div class="themesflat-testimonials style-4 clearfix image-circle">
+                                                    <div class="item">
+                                                        <div class="inner">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/testimonials/customer-2.png" alt="Image">
+                                                            </div>
+
+                                                            <blockquote class="text">
+                                                                <div class="start">
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                </div>
+                                                                <p>I would like to say how thankful I am for Finance Group. I have been a valued customer there for many years. They have helped me when some of the major lenders would not because of a credit score. I appreciate them so much. They gave me the opportunity to build up trust and repay my bill. I have recommended Finance Group too many of my friends and coworkers.</p>
+                                                                <div class="name-pos">
+                                                                    <h6 class="name">SABRINA BROWN</h6>
+                                                                    <span class="position">Delicates Studio</span>
+                                                                </div>
+                                                            </blockquote>
                                                         </div>
-
-                                                        <blockquote class="text">
-                                                            <div class="start">
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                            </div>
-                                                            <p>I would like to say how thankful I am for Finance Group. I have been a valued customer there for many years. They have helped me when some of the major lenders would not because of a credit score. I appreciate them so much. They gave me the opportunity to build up trust and repay my bill. I have recommended Finance Group too many of my friends and coworkers.</p>
-                                                            <div class="name-pos">
-                                                                <h6 class="name">SABRINA BROWN</h6>
-                                                                <span class="position">Delicates Studio</span>
-                                                            </div>
-                                                        </blockquote>
                                                     </div>
-                                                </div>
-                                            </div><!-- /.themesflat-testimonials --> 
+                                                </div><!-- /.themesflat-testimonials -->
 
-                                            <div class="themesflat-testimonials style-4 clearfix image-circle">
-                                                <div class="item">
-                                                    <div class="inner">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/testimonials/customer-1.png" alt="Image">
+                                                <div class="themesflat-testimonials style-4 clearfix image-circle">
+                                                    <div class="item">
+                                                        <div class="inner">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/testimonials/customer-1.png" alt="Image">
+                                                            </div>
+
+                                                            <blockquote class="text">
+                                                                <div class="start">
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                </div>
+                                                                <p>I would like to say how thankful I am for Finance Group. I have been a valued customer there for many years. They have helped me when some of the major lenders would not because of a credit score. I appreciate them so much. They gave me the opportunity to build up trust and repay my bill. I have recommended Finance Group too many of my friends and coworkers.</p>
+                                                                <div class="name-pos">
+                                                                    <h6 class="name">SABRINA BROWN</h6>
+                                                                    <span class="position">Delicates Studio</span>
+                                                                </div>
+                                                            </blockquote>
                                                         </div>
-
-                                                        <blockquote class="text">
-                                                            <div class="start">
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                            </div>
-                                                            <p>I would like to say how thankful I am for Finance Group. I have been a valued customer there for many years. They have helped me when some of the major lenders would not because of a credit score. I appreciate them so much. They gave me the opportunity to build up trust and repay my bill. I have recommended Finance Group too many of my friends and coworkers.</p>
-                                                            <div class="name-pos">
-                                                                <h6 class="name">SABRINA BROWN</h6>
-                                                                <span class="position">Delicates Studio</span>
-                                                            </div>
-                                                        </blockquote>
                                                     </div>
-                                                </div>
-                                            </div><!-- /.themesflat-testimonials -->
+                                                </div><!-- /.themesflat-testimonials -->
 
-                                            <div class="themesflat-testimonials style-4 clearfix image-circle">
-                                                <div class="item">
-                                                    <div class="inner">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/testimonials/customer-2.png" alt="Image">
+                                                <div class="themesflat-testimonials style-4 clearfix image-circle">
+                                                    <div class="item">
+                                                        <div class="inner">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/testimonials/customer-2.png" alt="Image">
+                                                            </div>
+
+                                                            <blockquote class="text">
+                                                                <div class="start">
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                    <i class="finance-icon-star"></i>
+                                                                </div>
+                                                                <p>I would like to say how thankful I am for Finance Group. I have been a valued customer there for many years. They have helped me when some of the major lenders would not because of a credit score. I appreciate them so much. They gave me the opportunity to build up trust and repay my bill. I have recommended Finance Group too many of my friends and coworkers.</p>
+                                                                <div class="name-pos">
+                                                                    <h6 class="name">SABRINA BROWN</h6>
+                                                                    <span class="position">Delicates Studio</span>
+                                                                </div>
+                                                            </blockquote>
                                                         </div>
-
-                                                        <blockquote class="text">
-                                                            <div class="start">
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                                <i class="finance-icon-star"></i>
-                                                            </div>
-                                                            <p>I would like to say how thankful I am for Finance Group. I have been a valued customer there for many years. They have helped me when some of the major lenders would not because of a credit score. I appreciate them so much. They gave me the opportunity to build up trust and repay my bill. I have recommended Finance Group too many of my friends and coworkers.</p>
-                                                            <div class="name-pos">
-                                                                <h6 class="name">SABRINA BROWN</h6>
-                                                                <span class="position">Delicates Studio</span>
-                                                            </div>
-                                                        </blockquote>
                                                     </div>
-                                                </div>
-                                            </div><!-- /.themesflat-testimonials -->                                            
-                                            
-                                        </div></div><!-- /.themesflat-carousel-box -->
+                                                </div><!-- /.themesflat-testimonials -->
+
+                                            </div>
+                                        </div><!-- /.themesflat-carousel-box -->
 
                                         <div class="themesflat-spacer clearfix" data-desktop="111" data-mobi="40" data-smobi="40"></div>
                                     </div><!-- /.col-md-12 -->
@@ -805,7 +547,7 @@
                         </div>
                         <!-- END TESTIMONIALS -->
 
-                        
+
 
                         <div class="row-request">
                             <div class="container-fluid">
@@ -842,7 +584,7 @@
                                                 <div class="progress-bg" data-percent="70%" data-inviewport="yes">
                                                     <div class="progress-animate"></div>
                                                 </div>
-                                            </div><!-- /.themesflat-progress --> 
+                                            </div><!-- /.themesflat-progress -->
 
                                             <div class="themesflat-spacer clearfix" data-desktop="39" data-mobi="40" data-smobi="40"></div>
 
@@ -854,8 +596,8 @@
                                                 <div class="progress-bg" data-percent="95%" data-inviewport="yes">
                                                     <div class="progress-animate"></div>
                                                 </div>
-                                            </div><!-- /.themesflat-progress -->                                      
-                                        </div><!-- /.themesflat-content-box -->   
+                                            </div><!-- /.themesflat-progress -->
+                                        </div><!-- /.themesflat-content-box -->
 
                                         <div class="themesflat-spacer clearfix" data-desktop="90" data-mobi="40" data-smobi="40"></div>
                                     </div>
@@ -866,10 +608,10 @@
                                             </a>
                                         </div><!-- /.themesflat-icon -->
                                     </div>
-                                    
+
                                 </div>
                             </div>
-                        </div>                                         
+                        </div>
 
                         <!-- PARTNERS -->
                         <div class="row-partner">
@@ -878,158 +620,160 @@
                                     <div class="col-md-12">
                                         <div class="themesflat-spacer clearfix" data-desktop="76" data-mobi="40" data-smobi="40"></div>
 
-                                        <div class="themesflat-partner style-2 arrow-center offset15 offset-v-50 has-arrows arrows-circle w32 has-bullets bullet-circle bullet45" data-auto="false" data-loop="false" data-column="5" data-column2="3" data-column3="2" data-gap="10"><div class="owl-carousel owl-theme">
-                                            <div class="partner-item clearfix">
-                                                <div class="inner">
-                                                    <a target="_blank" href="#">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-1.png" alt="Image">
-                                                        </div>
-                                                    </a>
+                                        <div class="themesflat-partner style-2 arrow-center offset15 offset-v-50 has-arrows arrows-circle w32 has-bullets bullet-circle bullet45" data-auto="false" data-loop="false" data-column="5" data-column2="3" data-column3="2" data-gap="10">
+                                            <div class="owl-carousel owl-theme">
+                                                <div class="partner-item clearfix">
+                                                    <div class="inner">
+                                                        <a target="_blank" href="#">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-1.png" alt="Image">
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="partner-item clearfix">
-                                                <div class="inner">
-                                                    <a target="_blank" href="#">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-2.png" alt="Image">
-                                                        </div>
-                                                    </a>
+                                                <div class="partner-item clearfix">
+                                                    <div class="inner">
+                                                        <a target="_blank" href="#">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-2.png" alt="Image">
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="partner-item clearfix">
-                                                <div class="inner">
-                                                    <a target="_blank" href="#">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-3.png" alt="Image">
-                                                        </div>
-                                                    </a>
+                                                <div class="partner-item clearfix">
+                                                    <div class="inner">
+                                                        <a target="_blank" href="#">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-3.png" alt="Image">
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="partner-item clearfix">
-                                                <div class="inner">
-                                                    <a target="_blank" href="#">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-4.png" alt="Image">
-                                                        </div>
-                                                    </a>
+                                                <div class="partner-item clearfix">
+                                                    <div class="inner">
+                                                        <a target="_blank" href="#">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-4.png" alt="Image">
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="partner-item clearfix">
-                                                <div class="inner">
-                                                    <a target="_blank" href="#">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-5.png" alt="Image">
-                                                        </div>
-                                                    </a>
+                                                <div class="partner-item clearfix">
+                                                    <div class="inner">
+                                                        <a target="_blank" href="#">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-5.png" alt="Image">
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="partner-item clearfix">
-                                                <div class="inner">
-                                                    <a target="_blank" href="#">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-6.png" alt="Image">
-                                                        </div>
-                                                    </a>
+                                                <div class="partner-item clearfix">
+                                                    <div class="inner">
+                                                        <a target="_blank" href="#">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-6.png" alt="Image">
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="partner-item clearfix">
-                                                <div class="inner">
-                                                    <a target="_blank" href="#">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-7.png" alt="Image">
-                                                        </div>
-                                                    </a>
+                                                <div class="partner-item clearfix">
+                                                    <div class="inner">
+                                                        <a target="_blank" href="#">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-7.png" alt="Image">
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="partner-item clearfix">
-                                                <div class="inner">
-                                                    <a target="_blank" href="#">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-8.png" alt="Image">
-                                                        </div>
-                                                    </a>
+                                                <div class="partner-item clearfix">
+                                                    <div class="inner">
+                                                        <a target="_blank" href="#">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-8.png" alt="Image">
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="partner-item clearfix">
-                                                <div class="inner">
-                                                    <a target="_blank" href="#">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-1.png" alt="Image">
-                                                        </div>
-                                                    </a>
+                                                <div class="partner-item clearfix">
+                                                    <div class="inner">
+                                                        <a target="_blank" href="#">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-1.png" alt="Image">
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="partner-item clearfix">
-                                                <div class="inner">
-                                                    <a target="_blank" href="#">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-2.png" alt="Image">
-                                                        </div>
-                                                    </a>
+                                                <div class="partner-item clearfix">
+                                                    <div class="inner">
+                                                        <a target="_blank" href="#">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-2.png" alt="Image">
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="partner-item clearfix">
-                                                <div class="inner">
-                                                    <a target="_blank" href="#">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-3.png" alt="Image">
-                                                        </div>
-                                                    </a>
+                                                <div class="partner-item clearfix">
+                                                    <div class="inner">
+                                                        <a target="_blank" href="#">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-3.png" alt="Image">
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="partner-item clearfix">
-                                                <div class="inner">
-                                                    <a target="_blank" href="#">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-4.png" alt="Image">
-                                                        </div>
-                                                    </a>
+                                                <div class="partner-item clearfix">
+                                                    <div class="inner">
+                                                        <a target="_blank" href="#">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-4.png" alt="Image">
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="partner-item clearfix">
-                                                <div class="inner">
-                                                    <a target="_blank" href="#">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-5.png" alt="Image">
-                                                        </div>
-                                                    </a>
+                                                <div class="partner-item clearfix">
+                                                    <div class="inner">
+                                                        <a target="_blank" href="#">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-5.png" alt="Image">
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="partner-item clearfix">
-                                                <div class="inner">
-                                                    <a target="_blank" href="#">
-                                                        <div class="thumb">
-                                                            <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-6.png" alt="Image">
-                                                        </div>
-                                                    </a>
+                                                <div class="partner-item clearfix">
+                                                    <div class="inner">
+                                                        <a target="_blank" href="#">
+                                                            <div class="thumb">
+                                                                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/partners/logo-6.png" alt="Image">
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div></div><!-- /.themesflat-partner -->
+                                        </div><!-- /.themesflat-partner -->
 
                                         <div class="themesflat-spacer clearfix" data-desktop="58" data-mobi="40" data-smobi="40"></div>
                                     </div><!-- /.col-md-12 -->
                                 </div><!-- /.row -->
                             </div><!-- /.container -->
                         </div>
-                        <!-- END PARTNERS -->                        
+                        <!-- END PARTNERS -->
                     </div><!-- /.page-content -->
                 </div><!-- /#inner-content -->
             </div><!-- /#site-content -->
         </div><!-- /#content-wrap -->
     </div><!-- /#main-content -->
 
-    <?php  get_footer() ?>
+    <?php get_footer() ?>

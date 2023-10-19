@@ -1,64 +1,21 @@
 <div id="sidebar">
                 <div id="inner-sidebar" class="inner-content-wrap">
-                    <div class="widget widget_search margin-bottom-55">
+
+                    <?php  dynamic_sidebar('sidebar-1') ?>
+
+                    <!-- <div class="widget widget_search margin-bottom-55">
                         <form role="search" method="get" action="#" class="search-form style-1">
                             <input type="search" class="search-field" placeholder="Search" value="" name="s" title="Search for:">
                             <button type="submit" class="search-submit" title="Search">Search</button>
                         </form>
-                    </div><!-- /.widget_search -->
+                    </div>/.widget_search -->
 
                     <div class="widget widget_instagram margin-bottom-48">
                         <h2 class="widget-title"><span>Instagram Photos</span></h2>
 
-                        <div class="instagram-wrap clearfix col3 g12">
-                            <div class="instagram_badge_image">
-                                <a href="#" target="_blank">
-                                <div class="item">
-                                    <img src="<?php  echo get_template_directory_uri()?>/assets/img/instagram/1.jpg" alt="Image">
-                                </div>
-                                </a>
-                            </div>
+                            <?php dynamic_sidebar('sidebar-2') ?>
 
-                            <div class="instagram_badge_image">
-                                <a href="#" target="_blank">
-                                <div class="item">
-                                    <img src="<?php  echo get_template_directory_uri()?>/assets/img/instagram/2.jpg" alt="Image">
-                                </div>
-                                </a>
-                            </div>
-
-                            <div class="instagram_badge_image">
-                                <a href="#" target="_blank">
-                                <div class="item">
-                                    <img src="<?php  echo get_template_directory_uri()?>/assets/img/instagram/3.jpg" alt="Image">
-                                </div>
-                                </a>
-                            </div>
-
-                            <div class="instagram_badge_image">
-                                <a href="#" target="_blank">
-                                <div class="item">
-                                    <img src="<?php  echo get_template_directory_uri()?>/assets/img/instagram/4.jpg" alt="Image">
-                                </div>
-                                </a>
-                            </div>
-
-                            <div class="instagram_badge_image">
-                                <a href="#" target="_blank">
-                                <div class="item">
-                                    <img src="<?php echo  get_template_directory_uri()?>/assets/img/instagram/5.jpg" alt="Image">
-                                </div>
-                                </a>
-                            </div>
-
-                            <div class="instagram_badge_image">
-                                <a href="#" target="_blank">
-                                <div class="item">
-                                    <img src="<?php echo get_template_directory_uri()?>/assets/img/instagram/6.jpg" alt="Image">
-                                </div>
-                                </a>
-                            </div>
-                        </div><!-- /.instagram-wrap -->
+                        
                     </div><!-- /.widget_instagram -->
 
                     <div class="widget widget_recent_news margin-bottom-41">

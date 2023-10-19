@@ -2,15 +2,19 @@
 <footer id="footer">
     <div id="footer-widgets" class="themesflat-container title-style-1">
         <div class="themesflat-row gutter-30">
-            <div class="span_1_of_4 col">
+
+        <?php  dynamic_sidebar('Footer-1') ?>
+
+
+             <!-- <div class="span_1_of_4 col">
                 <div class="widget widget_text padding-left-7">
                     <div class="textwidget">
                         <p class="margin-bottom-22">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo-footer.png" width="226" height="50" alt="Finance" data-retina="assets/img/logo-footer@2x.png" data-width="226" data-height="50">
+                            <img src="<?php //echo get_template_directory_uri() ?>/assets/img/logo-footer.png" width="226" height="50" alt="Finance" data-retina="assets/img/logo-footer@2x.png" data-width="226" data-height="50">
                         </p>
                         <p>We have a wide breadth of experience over 30 years providing financial services.</p>
                     </div>
-                </div><!-- /.widget_text -->
+                </div>
 
                 <div class="widget widget_information padding-left-7">
                     <ul>
@@ -33,8 +37,11 @@
                             </div>
                         </li>
                     </ul>
-                </div><!-- /.widget_information -->
-            </div><!-- /.span_1_of_4 -->
+                </div>
+            </div> -->
+
+           
+
 
             <div class="span_1_of_4 col">
                 <div class="widget widget_twitter margin-top-6 padding-left-13">
@@ -138,6 +145,7 @@
                 </div><!-- /.widget_instagram -->
             </div><!-- /.span_1_of_4 -->
         </div><!-- /.themesflat-row -->
+
     </div><!-- /#footer-widgets -->
 </footer><!-- /#footer -->
 
@@ -210,7 +218,7 @@
 <!-- Revolution Slider -->
 <script src="<?php echo get_template_directory_uri() ?>/includes/rev-slider/js/jquery.themepunch.tools.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/includes/rev-slider/js/jquery.themepunch.revolution.min.js"></script>
-<script src="assets/js/rev-slider.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/rev-slider.js"></script>
 <!-- Load Extensions only on Local File Systems ! The following part can be removed on Server for On Demand Loading -->
 <script src="<?php echo get_template_directory_uri() ?>/includes/rev-slider/js/extensions/revolution.extension.actions.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/includes/rev-slider/js/extensions/revolution.extension.carousel.min.js"></script>
