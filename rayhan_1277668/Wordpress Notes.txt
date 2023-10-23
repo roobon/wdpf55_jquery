@@ -27,7 +27,7 @@
 10. Duplicator (plugin)			= used for migration wordpress.
 
 * page.php = static every page 
-* single.php = post gular details page
+* single.php = post gular details page/ full content
 *** Multi site ***	= admin can create multiple user through sub directory with network tools.
 
 
@@ -57,9 +57,13 @@
 
 			<article> 
 
-		* the_post_thumbnail()								= get post thubmnail
+		* the_post_thumbnail()								= get post thubmnail / image
 		* <a href=" <?php  echo the_permalink() ?> "> <?php  echo the_title() ?> </a>	= get title
-
+		* the_category()								= 
+		* the_author()
+		* the_content()									= get the content dynamically
+		* the_excerpt()									= this will get the summary of a post
+								
 			</article>
 
 
@@ -68,9 +72,115 @@
                 endif; 
                     ?>
 
+* <?php comments_template(); ?> 	= get comments for the posts. ( give this after ending the post loop ) 
 
 * the_date('j') 			= get date
-*  echo get_the_date('M')		= get month
+* echo get_the_date('M')		= get month
+* echo get_home_url() 			= click on the logo to go home page always
+* wp_title()				= use in single.php & page.php for dynamic breadcum and page title.  
+
+
+
+** Functions For menu						=> main_menu = location 
+*  register_nav_menus( array(
+        'main_menu' => __( 'Main Menu', 'ficonsu' ),			 
+        'top_menu'  => __( 'Top Menu', 'ficonsu' ),
+        'footer_menu'  => __( 'Footer Menu', 'ficonsu' ),
+    ) );
+
+
+
+** function for sidebars 				if works it will show in the appreance > widgets.
+
+* function ficonsu_sidebars() {
+	register_sidebar( array(
+		'name'          => __( 'Main Sidebar', 'textdomain' ),
+		'id'            => 'sidebar-1',
+		'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'textdomain' ),
+		// 'before_widget' => '<li id="%1$s" class="widget %2$s">',
+		// 'after_widget'  => '</li>',
+		// 'before_title'  => '<h2 class="widgettitle">',
+		// 'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Page Sidebar', 'textdomain' ),
+		'id'            => 'sidebar-2',
+		'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'textdomain' ),
+		// 'before_widget' => '<li id="%1$s" class="widget %2$s">',
+		// 'after_widget'  => '</li>',
+		// 'before_title'  => '<h2 class="widgettitle">',
+		// 'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'ficonsu_sidebars' );
+
+
+
+* add_filter('use_widgets_block_editor', '__return_false');		= unable old editor in widgets
+
+
+* dynamic_sidebar('sidebar-1')						= get sidebar dynamically
+
+
+## for custom post				= https://developer.wordpress.org/reference/functions/register_post_type/
+
+* $labels = array(
+    'name'                  => _x( 'Services', 'Post type general name', 'Service' ),
+    'singular_name'         => _x( 'Service', 'Post type singular name', 'Service' ),
+
+
+);
+$args = array(
+    'labels'             => $labels ,
+    'description'        => 'Service custom Post type',
+    'public'             => true,
+    'supports'           => array( 'title', 'editor', 'author', 'thumbnail' ),
+);
+
+register_post_type( 'Services', $args );
+
+
+
+## custom post loop
+
+    <?php 
+    $query = new WP_Query(array(
+        'post_type'=>'services')) ;
+        
+        if ( $query->have_posts()) :
+            while ($query-> have_posts()) :
+                $query->the_post();
+    ?>
+
+<div>
+</div>
+
+
+<?php
+endwhile;
+endif;
+?>
+
+
+
+## custom function for limit word content
+
+ short_content() 
+
+function short_content (){
+    $txt =  get_the_excerpt() ;
+    $limit =  substr($txt,0,100);
+    $limit .= "...";
+    echo $limit ;
+}
+
+
+
+
+
+
+
 
 
 
